@@ -1,0 +1,95 @@
+\documentclass{article}
+
+\usepackage{biblatex}
+
+\addbibresource{ref.bib}
+
+\title{ELE 548: Project Plan}
+
+\author{Calvin Higgins}
+
+\begin{document}
+
+\maketitle
+
+\section{Potential Topics}
+
+\subsection{Machine Learning for Code Optimization}
+
+\textbf{CompilerGym}~\cite{cummins2022} is a set of environments for compiler optimization tasks such as reducing code size and instruction count. To solve 
+these tasks, agents select and apply pre-defined optimization passes to benchmark programs (i.e. agents try to solve the \textbf{phase-ordering problem}). 
+Although several standard benchmark suites are supported, the \textbf{SPEC CPU2017 suite}~\cite{bucek2018} is notably absent. Moreover, CompilerGym only 
+supports directly optimizing benchmark execution time on the \textbf{Jotai suite}~\cite{kind2025}. \\
+
+\noindent
+To address these limitations, I propose the following:
+\begin{enumerate}
+    \item Add the SPEC CPU2017 benchmark suite to CompilerGym, including code-size, instruction count and execution time observation spaces.
+    \item Implement baseline methods (e.g. random search) for optimizing SPEC CPU2017 benchmark runtimes.
+\end{enumerate}
+
+\subsubsection{Performance and World Models}
+
+In the absence of confounds such as operating system context switches, execution time is determined by three factors:
+\begin{enumerate}
+    \item Generated machine code.
+    \item Microarchitecture implementation.
+    \item Input data distribution.
+\end{enumerate}
+
+\noindent
+Finding near-optimal sequences of passes (a) with few executions requires accurate \textbf{performance models} to estimate execution time, and (b) with few 
+compilations requires accurate \textbf{world models} to approximate the impact of optimizations on either code representation or execution time. To be accurate, 
+performance and world models must incorporate all three factors influencing execution time. \\ 
+
+\noindent
+However, existing methods for ordering optimization passes, such as \textbf{CompilerDream}~\cite{chaoyi2025} the only model-based RL method for phase-ordering, 
+have primarily focused on code-size reduction. Some methods have addressed execution time, including \cite{liu2025} and \cite{patabandi2023}, although they have
+focused on code, and not microarchitecture and data distribution representations. \\
+
+\noindent
+To address this limitation, I propose the following:
+\begin{enumerate}
+    \item Explicitly model the microarchitecture and data distribution, and inject these representations into an existing phase-ordering approach.
+\end{enumerate}
+
+\noindent
+Alternatively, the combination of code, microarchitecture, and data representations could be evaluated via SPEC CPU2017 score prediction. Existing approaches 
+are simple (e.g. multilayer perceptrons~\cite{ashkan2022}, convolutional neural networks~\cite{mehmet2023}), and only explicitly incorporate microarchitecture 
+information. \\
+
+\noindent
+To address this limitation, I propose the following:
+\begin{enumerate}
+    \item Incorporate code and data representations into SPEC CPU2017 score prediction.
+\end{enumerate}
+
+\printbibliography
+
+% survey paper: https://dl.acm.org/doi/pdf/10.1145/3197978?casa_token=-DDX5GUdAXoAAAAA:T2rg1-lxhWKAvF0o6LmjCqe4xmM_-JrdH5EjDbTANo9WqlPdpZEJCSNgguREu1zbFkbMrwEq_irI
+% architecture survey paper: https://dl.acm.org/doi/pdf/10.1145/3494523?casa_token=jvcb3B5pe9QAAAAA:f2v9warN-BIT0uLMSI0UC0skUiJOKioEKHUyY4rZoMpyV5-E31nV80RjdD3NUMKZfelu1Tzg1shV
+
+% DL models:
+% https://dl.acm.org/doi/10.1145/3640537.3641582
+% RL + LLM: https://hpcrl.github.io/ICS2025-webpage/program/Proceedings_ICS25/ics25-26.pdf
+
+% non-DL models:
+% https://dl.acm.org/doi/pdf/10.1145/3715756
+% https://dl.acm.org/doi/10.1145/3735452.3735530
+
+% more flexible than opt passes: https://dl.acm.org/doi/pdf/10.1145/3696443.3708922
+% https://arxiv.org/pdf/2410.03120v2
+% register allocation: https://dl.acm.org/doi/pdf/10.1145/3578360.3580273
+
+% compilergym for architecture: “ArchGym: An open-source gymnasium for machine learning assisted architecture design,
+% compilergym imporvement: https://dl.acm.org/doi/pdf/10.1145/3640537.3641580
+
+% vision paper (cummins): https://scontent-bos5-1.xx.fbcdn.net/v/t39.8562-6/240841093_348724053629846_1551966423153256824_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=e280be&_nc_ohc=SBNzHCt9NUoQ7kNvwHMzHwR&_nc_oc=AdmwqWSAXj0GwWozUgvfgjldeKBXzA0ZPg1Pytsa3n1GEdBsWjMZ968aHmlnh9MfeStWISh05txE9_6FIqqjqNCP&_nc_zt=14&_nc_ht=scontent-bos5-1.xx&_nc_gid=rvUDSW0JDs3fG_3T1T4RRg&oh=00_AfcfOmoYuZ7ggtc5oyq7FQyeOq7mT-cDF7abi7UNmOX2lg&oe=68F5FD6B
+
+% find heuristics in code, optimize them: https://dl.acm.org/doi/10.1109/CGO57630.2024.10444847
+
+% polyhedral: https://dl.acm.org/doi/10.1145/3721145.3725766
+
+% find performance bugs in compilers by running LLM code: https://dl.acm.org/doi/pdf/10.1145/3708493.3712686
+
+\end{document}
