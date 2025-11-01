@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1760626643.56649 "main.bcf" "main.bbl" "main" 1761751816.53571 0
-  "main.bcf" 1761751816.50191 108212 cdb47771aa72ec77c0fc9cff9ef0dfa8 "pdflatex"
-  "ref.bib" 1761693927.90339 2671 36fb066617cd0977c8b2dbb39d962240 ""
+["biber main"] 1762018259.04123 "main.bcf" "main.bbl" "main" 1762018309.15668 0
+  "main.bcf" 1762018309.12698 109204 021cd43d2ac5db504a9ba781688ad33f "pdflatex"
+  "ref.bib" 1762018258.89895 9119 b910e8db4050dc3adb4fc3979ac78bb0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761751815.72402 "/home/calvin/Documents/uri/ele548/project/ele548/proposal/main.tex" "main.pdf" "main" 1761751816.536 0
+["pdflatex"] 1762018308.56791 "/home/calvin/Documents/uri/ele548/project/ele548/proposal/main.tex" "main.pdf" "main" 1762018309.15701 0
   "/etc/texmf/web2c/texmf.cnf" 1757121109.70358 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/calvin/Documents/uri/ele548/project/ele548/proposal/main.tex" 1761751815.47893 5582 2995c89cf56aedc273cc2f3b8ad4ee9c ""
+  "/home/calvin/Documents/uri/ele548/project/ele548/proposal/main.tex" 1762018308.41598 10714 d583c08edbb3f49b7a484ed5c63f6284 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -28,9 +28,11 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -64,10 +66,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757167879.68467 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757167955 8216300 293e058415e0658b42867906338bd8ca ""
-  "main.aux" 1761751816.50091 2013 5bc63640d9f6fe3f1ee8f42fe87bf984 "pdflatex"
-  "main.bbl" 1761693927.90791 13979 2561d7ccddc0b6419f5d1d2a1d315836 "biber main"
-  "main.run.xml" 1761751816.50337 2298 9255f4d2cb39a5ffeeda22d5a40b248a "pdflatex"
-  "main.tex" 1761751815.47893 5582 2995c89cf56aedc273cc2f3b8ad4ee9c ""
+  "main.aux" 1762018309.12598 3281 206b2569dac4ab1e308c16c13f3a1e34 "pdflatex"
+  "main.bbl" 1762018259.63 42655 41a1866f30ffc9387d2f7f30421cea06 "biber main"
+  "main.run.xml" 1762018309.12818 2298 9255f4d2cb39a5ffeeda22d5a40b248a "pdflatex"
+  "main.tex" 1762018308.41598 10714 d583c08edbb3f49b7a484ed5c63f6284 ""
   (generated)
   "main.aux"
   "main.bcf"

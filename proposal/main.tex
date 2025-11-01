@@ -15,81 +15,76 @@
 \section{Abstract}
 
 Attaining optimal program performance on modern heterogeneous hardware requires specializing compiler optimizations to individual architectures. To ease the 
-engineering burden, researchers have proposed automatically learning optimal orderings of compiler optimization phases. In this work, we minimize (1) binary 
+engineering burden, researchers have proposed automatically learning optimal orderings of compiler optimization passes. In this work, we minimize (1) binary 
 size and (2) mean execution time by ordering LLVM optimization passes with EfficientZero, a sample-efficient reinforcement learning method. We attain an X\% 
-reduction in binary size compared to \texttt{-Oz} and an X\% speedup compared to \texttt{-O3} when optimizing the MiBench benchmark suite.
+reduction in binary size compared to \texttt{-Oz} and an X\% speedup compared to \texttt{-O3} when optimizing the MiBench embedded systems benchmark suite.
 
-\section{Overview}
+\section{Introduction}
 
-TODO
+The goal of a \textbf{compiler} is simple: find an optimal translation of high-level code into machine code. Compilers begin with a relatively naive 
+translation, and iteratively refine it with transformations known as \textbf{optimization passes}. Different optimization pass orders can yield binaries with 
+drastically different sizes and runtime performance. The \textbf{phase ordering problem} involves determining the best order to apply a fixed set of 
+optimization passes. Historically, expert compiler engineers designed new optimization pass orders for every architecture. However, as hardware rapidly evolves 
+and becomes increasingly heterogeneous, maintaining optimization pass orders imposes a growing engineering burden. Automation can alleviate this burden and 
+allow compiler experts to focus on more critical tasks~\cite{wang2018}. \\
 
-\section{Motivation}
+\noindent
+By formulating the phase ordering problem as a \textbf{Markov Decision Process (MDP)}, standard reinforcement learning techniques apply:
+\begin{enumerate}
+    \item \textbf{State space.} $S$ is the set of all legal programs.
+    \item \textbf{Action space.} $A$ is the set of all optimization passes.
+    \item \textbf{Transition function.} $T(s, a)$ is the result of applying pass $a$ to program $s$.
+    \item \textbf{Reward function.} $R(s, a) = C(s) - C(T(s, a))$ where $C(s)$ is a cost function such as binary size, instruction count, or execution 
+    time.
+\end{enumerate}
+Unfortunately, the phase ordering problem is challenging: the action space $A$ contains hundreds of passes, leading to a combinatorial explosion of possible 
+optimization sequences. Moreover, rewards are very sparse as effective sequences are rare. Even evaluating the transition and reward functions is slow as 
+they require compiler invocations. \\
 
-TODO
+\noindent
+Accordingly, any learning-based approach to the phase-ordering problem ought to be sample-efficient. CompilerDream~\cite{chaoyi2025}, a state-of-the-art 
+phase-ordering policy, adapted DreamerV3~\cite{hafner2025}, a general purpose reinforcement learning method, to compiler optimization. However, although 
+DreamerV3 dominates nearly all reinforcement learning methods across a diverse set of domains, it is notably overshadowed by EfficientZero~\cite{ye2021} in low 
+sample regimes~\cite{hafner2025}. Motivated by its sample efficiency, I will apply EfficientZero to the phase ordering problem.  
 
-\section{Key Insight}
+\section{Related Work}
 
-TODO
+Autophase~\cite{hajali2020}, the first reinforcement learning method for the phase ordering problem, obtained a $1.28\times$ speedup compared to \texttt{-O3} on 
+high-level circuit synthesis with proximal policy optimization (PPO). CORL~\cite{mammadli2020} obtained a $1.32\times$ speedup compared to \texttt{-O3} on the 
+LLVM test suite with deep Q-learning. POSET-RL\cite{jain2022} also used deep Q-learning to optimize execution time and binary size, achieving a $1.019\times$ 
+x86 binary size improvement relative to \texttt{-Oz} on embedded systems benchmarks. More recently, DeCOS~\cite{cui2025} bootstrapped standard reinforcement 
+learning methods with large language models, and achieved speedups on SPEC 2017 benchmarks. CompilerDream~\cite{chaoyi2025} pretrained DreamerV3 for code 
+optimization, and obtained state-of-the-art results on IR instruction count reduction.
 
 \section{Design}
 
-TODO
+EfficientZero~\cite{ye2021} is a reinforcement learning method that continues the AlphaGo~\cite{silver2016}, AlphaZero~\cite{silver2018}, 
+MuZero~\cite{schrittwieser2020}, and MuZero Reanalyze~\cite{schrittwieser2021} linage. Like MuZero and MuZero Reanalyze, EfficientZero contains three networks:
+\begin{enumerate}
+    \item \textbf{Representation function.} Maps an observation (program) to a latent state (program representation).
+    \item \textbf{Dynamics function.} Maps a latent state (program representation) and an action (optimization pass) to a new latent state 
+    (program representation).
+    \item \textbf{Prediction function.} Maps a latent state (program representation) to a policy (probability distribution over optimization passes) and a 
+    reward (change in binary size).
+\end{enumerate}
+By mapping observations into a latent space with the representation function, EfficientZero can use the dynamics and prediction functions to explore the 
+state space without executing actions on the real state space. In the context of phase ordering, this minimizing compiler invocations. EfficientZero also 
+includes several other training tricks on top of MuZero Reanalyze to accelerate convergence. \\
+
+\noindent
+Initially, I will pre-train EfficientZero on AnghaBench~\cite{dasilva2021}, a suite of 1,041,333 compile-only C/C++ functions scraped from GitHub. AnghaBench is
+large-scale, diverse and human-generated, but many programs are too simple to afford significiant optimization opportunities~\cite{chaoyi2025}. Time permitting,
+I will pre-train on CodeContests~\cite{li2022} instead, as recommended by the authors of CompilerDream~\cite{chaoyi2025}.
 
 \section{Evaluation}
 
-metrics, methods.
-
-
-
-\subsection{Machine Learning for Code Optimization}
-
-\textbf{CompilerGym}~\cite{cummins2022} is a set of environments for compiler optimization tasks such as reducing code size and instruction count. To solve 
-these tasks, agents select and apply pre-defined optimization passes to benchmark programs (i.e. agents try to solve the \textbf{phase-ordering problem}). 
-Although several standard benchmark suites are supported, the \textbf{SPEC CPU2017 suite}~\cite{bucek2018} is notably absent. Moreover, CompilerGym only 
-supports directly optimizing benchmark execution time on the \textbf{Jotai suite}~\cite{kind2025}. \\
-
-\noindent
-To address these limitations, I propose the following:
-\begin{enumerate}
-    \item Add the SPEC CPU2017 benchmark suite to CompilerGym, including code-size, instruction count and execution time observation spaces.
-    \item Implement baseline methods (e.g. random search) for optimizing SPEC CPU2017 benchmark runtimes.
-\end{enumerate}
-
-\subsubsection{Performance and World Models}
-
-In the absence of confounds such as operating system context switches, execution time is determined by three factors:
-\begin{enumerate}
-    \item Generated machine code.
-    \item Microarchitecture implementation.
-    \item Input data distribution.
-\end{enumerate}
-
-\noindent
-Finding near-optimal sequences of passes (a) with few executions requires accurate \textbf{performance models} to estimate execution time, and (b) with few 
-compilations requires accurate \textbf{world models} to approximate the impact of optimizations on either code representation or execution time. To be accurate, 
-performance and world models must incorporate all three factors influencing execution time. \\ 
-
-\noindent
-However, existing methods for ordering optimization passes, such as \textbf{CompilerDream}~\cite{chaoyi2025} the only model-based RL method for phase-ordering, 
-have primarily focused on code-size reduction. Some methods have addressed execution time, including \cite{liu2025} and \cite{patabandi2023}, although they have
-focused on code, and not microarchitecture and data distribution representations. \\
-
-\noindent
-To address this limitation, I propose the following:
-\begin{enumerate}
-    \item Explicitly model the microarchitecture and data distribution, and inject these representations into an existing phase-ordering approach.
-\end{enumerate}
-
-\noindent
-Alternatively, the combination of code, microarchitecture, and data representations could be evaluated via SPEC CPU2017 score prediction. Existing approaches 
-are simple (e.g. multilayer perceptrons~\cite{ashkan2022}, convolutional neural networks~\cite{mehmet2023}), and only explicitly incorporate microarchitecture 
-information. \\
-
-\noindent
-To address this limitation, I propose the following:
-\begin{enumerate}
-    \item Incorporate code and data representations into SPEC CPU2017 score prediction.
-\end{enumerate}
+% TODO: mention LLVM 
+CompilerGym~\cite{cummins2022} is a set of environments for compiler optimization tasks such as ordering optimization passes to reduce binary size and 
+instruction counts. Since there is limited support for optimizing execution time, I will minimize x86-64 binary size by ordering optimization passes from the 
+LLVM~\cite{lattner2004} compiler infrastructure. In particular, I will evaluate my method on binary size improvement factor relative to \texttt{-Oz}, the \
+human-designed aggressive binary size optimization sequence, on the MiBench embedded systems benchmark suite\cite{guthaus2001}. Time permitting, I will explore 
+other datasets like cBench~\cite{fursin2014}, stronger baselines like random search, other objectives like minimizing mean execution time and other platforms 
+like ARM64.
 
 \printbibliography
 
@@ -118,5 +113,61 @@ To address this limitation, I propose the following:
 % polyhedral: https://dl.acm.org/doi/10.1145/3721145.3725766
 
 % find performance bugs in compilers by running LLM code: https://dl.acm.org/doi/pdf/10.1145/3708493.3712686
+
+
+% 5 minutes -> 5 slides
+
+% Attaining optimal program performance on modern heterogeneous hardware requires specializing compiler optimizations to individual architectures. To ease the 
+% engineering burden, researchers have proposed automatically learning optimal orderings of compiler optimization phases. In this work, we minimize (1) binary 
+% size and (2) mean execution time by ordering LLVM optimization passes with EfficientZero, a sample-efficient reinforcement learning method. We attain an X\% 
+% reduction in binary size compared to \texttt{-Oz} and an X\% speedup compared to \texttt{-O3} when optimizing the MiBench benchmark suite.
+
+
+% hardware, compilers
+% phase ordering
+% 3x efficientzero
+
+%     muzero reanalyze
+
+%     3 networks:
+%         representation function: state + optional history to latent state
+%         dynamics function: latent state + action to latent state + reward
+%         prediction function: latent state to policy (prob dist over actions) + value (expected reward from policy)
+
+%     MCTS:
+%         predicted policy, value should be consistent with later policy, value after rollout
+%         make policy, values consistent
+    
+%     to train reward:
+%         do a rollout
+%         pick state
+%         map to latent state
+%         rollout the next n states
+%         train reward to match the actual reward n steps out
+
+%     to train value:
+%         same
+%         train value to match sum of rewards n steps out, plus value at final state
+
+
+%     efficientzero
+%         1. should be able to predict real t+1 latent state (t+1 state to latent) via latent t + transition function
+%         2. instead of predicting reward in dynamics function, predict sum of next m rewards
+%         3. when retraining on old sequences, use shorter rollouts for older sequences
+    
+
+% EfficientZero: How It Works: 
+% https://www.lesswrong.com/posts/mRwJce3npmzbKfxws/efficientzero-how-it-works
+
+% Reinforcement Learning in Strategy-Based and Atari Games: A Review of Google DeepMind’s Innovations
+% https://arxiv.org/pdf/2502.10303
+% Autophase 2
+% https://chriscummins.cc/pub/2022-autophase-v2.pdf
+
+% How to write an abstract
+% https://users.ece.cmu.edu/~koopman/essays/abstract.html
+
+% MLGO: targets code size via inlining
+% https://arxiv.org/pdf/2101.04808
 
 \end{document}
