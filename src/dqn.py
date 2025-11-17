@@ -113,12 +113,14 @@ class DQN(nn.Module):
         super().__init__()
         self.fc1 = nn.Linear(n_observations, hidden_size)
         self.fc2 = nn.Linear(hidden_size, hidden_size)
-        self.fc3 = nn.Linear(hidden_size, n_actions)
+        self.fc3 = nn.Linear(hidden_size, hidden_size)
+        self.fc4 = nn.Linear(hidden_size, n_actions)
 
     def forward(self, x: Tensor) -> Tensor:
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
-        x = self.fc3(x)
+        x = F.relu(self.fc3(x))
+        x = self.fc4(x)
         return x
 
 
@@ -127,6 +129,7 @@ class DQN(nn.Module):
 # action distribution
 # epsilon greedy value
 # action had no effect (in info)
+# make a new Statistics structure, rename existing ones
 
 
 @dataclass
@@ -150,17 +153,17 @@ class TrainState:
 class TrainConfig:
     eps_start: float = 0.9
     eps_end: float = 0.01
-    eps_decay: int = 10_000
+    eps_decay: int = 100_000
     batch_size: int = 128
     gamma: float = 0.99
     tau: float = 0.005
     lr: float = 3e-5
-    episodes: int = 10000
+    episodes: int = 100_000
     max_episode_steps: int = 25
-    replay_memory_capacity: int = 10_000
+    replay_memory_capacity: int = 100_000
     max_grad_value: int = 100
     ma_window_size: int = 100
-    hidden_size: int = 512
+    hidden_size: int = 256
 
 
 def select_action(ts: TrainState, cfg: TrainConfig) -> Tensor:
@@ -187,7 +190,8 @@ def select_action(ts: TrainState, cfg: TrainConfig) -> Tensor:
 
 
 def train_step(ts: TrainState, cfg: TrainConfig) -> None:
-    if len(ts.memory) < cfg.batch_size:
+    # TODO: move to config
+    if len(ts.memory) < max(10 * cfg.batch_size, 10_000):
         return
 
     batch = ts.memory.sample(cfg.batch_size)
@@ -205,7 +209,7 @@ def train_step(ts: TrainState, cfg: TrainConfig) -> None:
     action_batch = torch.cat([t.action for t in batch])
     reward_batch = torch.cat([t.reward for t in batch])
     ts.observation_scaler.update(state_batch)
-    print("reward mean/std:", reward_batch.mean().item(), reward_batch.std().item())
+    # print("reward mean/std:", reward_batch.mean().item(), reward_batch.std().item())
 
     state_action_values = ts.policy_net(
         ts.observation_scaler.scale(state_batch)
