@@ -122,6 +122,13 @@ class DQN(nn.Module):
         return x
 
 
+# TODO: things to track
+# loss, reward, grad, Q-value, input dist. after norm statistics
+# action distribution
+# epsilon greedy value
+# action had no effect (in info)
+
+
 @dataclass
 class TrainState:
     env: CompilerEnv
@@ -147,9 +154,9 @@ class TrainConfig:
     batch_size: int = 128
     gamma: float = 0.99
     tau: float = 0.005
-    lr: float = 3e-4
+    lr: float = 3e-5
     episodes: int = 10000
-    max_episode_steps: int = 5
+    max_episode_steps: int = 25
     replay_memory_capacity: int = 10_000
     max_grad_value: int = 100
     ma_window_size: int = 100
@@ -197,6 +204,8 @@ def train_step(ts: TrainState, cfg: TrainConfig) -> None:
     state_batch = torch.cat([t.state for t in batch])
     action_batch = torch.cat([t.action for t in batch])
     reward_batch = torch.cat([t.reward for t in batch])
+    ts.observation_scaler.update(state_batch)
+    print("reward mean/std:", reward_batch.mean().item(), reward_batch.std().item())
 
     state_action_values = ts.policy_net(
         ts.observation_scaler.scale(state_batch)
@@ -209,9 +218,7 @@ def train_step(ts: TrainState, cfg: TrainConfig) -> None:
             .max(1)
             .values
         )
-    expected_state_action_values = (
-        next_state_values * cfg.gamma
-    ) + ts.reward_scaler.scale(reward_batch)
+    expected_state_action_values = (next_state_values * cfg.gamma) + reward_batch
 
     criterion = nn.SmoothL1Loss()
     loss = criterion(state_action_values, expected_state_action_values.unsqueeze(1))
@@ -222,8 +229,14 @@ def train_step(ts: TrainState, cfg: TrainConfig) -> None:
     ts.opt.step()
 
     ts.step += 1
-    ts.observation_scaler.update(state_batch)
-    ts.reward_scaler.update(reward_batch)
+
+    target_net_state_dict = ts.target_net.state_dict()
+    policy_net_state_dict = ts.policy_net.state_dict()
+    for key in policy_net_state_dict:
+        target_net_state_dict[key] = policy_net_state_dict[
+            key
+        ] * cfg.tau + target_net_state_dict[key] * (1 - cfg.tau)
+    ts.target_net.load_state_dict(target_net_state_dict)
 
 
 def train_episode(ts: TrainState, cfg: TrainConfig) -> None:
@@ -256,14 +269,6 @@ def train_episode(ts: TrainState, cfg: TrainConfig) -> None:
 
         train_step(ts, cfg)
 
-        target_net_state_dict = ts.target_net.state_dict()
-        policy_net_state_dict = ts.policy_net.state_dict()
-        for key in policy_net_state_dict:
-            target_net_state_dict[key] = policy_net_state_dict[
-                key
-            ] * cfg.tau + target_net_state_dict[key] * (1 - cfg.tau)
-        ts.target_net.load_state_dict(target_net_state_dict)
-
 
 def train(ts: TrainState, cfg: TrainConfig) -> None:
     for episode in tqdm(range(cfg.episodes)):
@@ -275,24 +280,27 @@ def train(ts: TrainState, cfg: TrainConfig) -> None:
         plt.clf()
 
         finals = torch.tensor(ts.finals, device=device)
-        plt.plot(finals.cpu().numpy())
+        plt.plot(finals.cpu().numpy(), label="DQN")
 
         oz_finals = torch.tensor(ts.oz_finals, device=device)
-        plt.plot(oz_finals.cpu().numpy())
+        plt.plot(oz_finals.cpu().numpy(), label="-Oz")
 
         if finals.size(0) >= cfg.ma_window_size:
             ma_finals = finals.unfold(0, cfg.ma_window_size, 1).mean(1).view(-1)
             ma_finals = torch.cat(
-                (torch.zeros(cfg.ma_window_size - 1, device=device), ma_finals)
+                (torch.ones(cfg.ma_window_size - 1, device=device), ma_finals)
             )
-            plt.plot(ma_finals.cpu().numpy())
+            plt.plot(ma_finals.cpu().numpy(), label="DQN Moving Average")
 
             ma_oz_finals = oz_finals.unfold(0, cfg.ma_window_size, 1).mean(1).view(-1)
             ma_oz_finals = torch.cat(
-                (torch.zeros(cfg.ma_window_size - 1, device=device), ma_oz_finals)
+                (torch.ones(cfg.ma_window_size - 1, device=device), ma_oz_finals)
             )
-            plt.plot(ma_oz_finals.cpu().numpy())
+            plt.plot(ma_oz_finals.cpu().numpy(), label="-Oz Moving Average")
 
+        plt.xlabel("Episode")
+        plt.ylabel("IR Instruction Count Improvement Factor over -O0")
+        plt.legend()
         plt.savefig("out.png")
 
 
@@ -300,7 +308,7 @@ def main(cfg: TrainConfig) -> None:
     with gym.make("llvm-v0") as env:
         env = TimeLimit(env, max_episode_steps=cfg.max_episode_steps)
         env = RandomOrderBenchmarks(env, env.datasets["benchmark://jotaibench-v0"])
-        env = ConstrainedCommandline(
+        """env = ConstrainedCommandline(
             env,
             flags=[
                 "-break-crit-edges",
@@ -319,7 +327,7 @@ def main(cfg: TrainConfig) -> None:
                 "-simplifycfg",
                 "-sroa",
             ],
-        )
+        )"""
         env.observation_space = "Autophase"
         env.reward_space = "IrInstructionCount"
 
