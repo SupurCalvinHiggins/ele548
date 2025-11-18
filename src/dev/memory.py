@@ -1,34 +1,28 @@
-import random
-from collections import deque
-from dataclasses import dataclass
-from typing import List
+from typing import Tuple
 
+import torch
+import torch.nn as nn
 from torch import Tensor
 
 
-@dataclass
-class Transition:
-    state: Tensor
-    action: Tensor
-    next_state: Tensor
-    reward: Tensor
-
-
-class Memory:
-    def __init__(self, capacity: int) -> None:
+class Memory(nn.Module):
+    def __init__(self, capacity: int, state_shape: Tuple[int]) -> None:
+        super().__init__()
         assert capacity > 0
-        self.memory = deque([], maxlen=capacity)
 
-    def emplace(
-        self, state: Tensor, action: Tensor, next_state: Tensor, reward: Tensor
-    ) -> None:
-        self.push(Transition(state, action, next_state, reward))
+        self.capacity = capacity
+        self.position = 0
+        self.size = 0
 
-    def push(self, transition: Transition) -> None:
-        self.memory.append(transition)
-
-    def sample(self, k: int) -> List[Transition]:
-        return random.sample(self.memory, k)
+        self.register_buffer(
+            "states", torch.zeros((capacity, *state_shape), dtype=torch.float)
+        )
+        self.register_buffer(
+            "next_states", torch.zeros((capacity, *state_shape), dtype=torch.float)
+        )
+        self.register_buffer("actions", torch.zeros((capacity,), dtype=torch.long))
+        self.register_buffer("rewards", torch.zeros((capacity,), dtype=torch.float))
+        self.register_buffer("dones", torch.zeros((capacity,), dtype=torch.bool))
 
     def push_batch(
         self,
@@ -38,11 +32,32 @@ class Memory:
         rewards: Tensor,
         dones: Tensor,
     ) -> None:
-        pass
+        batch_size = states.size(0)
+
+        device = self.states.device
+        idxs = (torch.arange(batch_size, device=device) + self.position) % self.capacity
+
+        self.states[idxs] = states
+        self.next_states[idxs] = next_states
+        self.actions[idxs] = actions
+        self.rewards[idxs] = rewards
+        self.dones[idxs] = dones
+
+        self.position = (self.position + batch_size) % self.capacity
+        self.size = min(self.capacity, self.size + batch_size)
 
     def sample_batch(
         self, batch_size: int
-    ) -> Tuple[Tensor, Tensor, Tensor, Tensor, Tensor]: ...
+    ) -> Tuple[Tensor, Tensor, Tensor, Tensor, Tensor]:
+        device = self.states.device
+        idxs = torch.randint(0, self.size, (batch_size,), device=device)
+        return (
+            self.states[idxs],
+            self.actions[idxs],
+            self.next_states[idxs],
+            self.rewards[idxs],
+            self.dones[idxs],
+        )
 
     def __len__(self) -> int:
-        return len(self.memory)
+        return self.size
