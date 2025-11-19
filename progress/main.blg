@@ -1,15 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[38] biber:340> INFO - === Wed Nov 19, 2025, 14:42:35
-[47] Biber.pm:419> INFO - Reading 'main.bcf'
-[77] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
-[83] Biber.pm:4419> INFO - Processing section 0
-[88] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
-[89] bibtex.pm:1713> INFO - LaTeX decoding ...
-[92] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[158] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[158] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[158] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[158] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[162] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[35] biber:340> INFO - === Wed Nov 19, 2025, 14:54:09
+[43] Biber.pm:419> INFO - Reading 'main.bcf'
+[73] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
+[79] Biber.pm:4419> INFO - Processing section 0
+[84] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[85] bibtex.pm:1713> INFO - LaTeX decoding ...
+[94] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[159] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[159] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[159] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[159] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[163] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
 [165] bbl.pm:763> INFO - Output to main.bbl
+[165] Biber.pm:131> WARN - Duplicate entry key: 'cummins2022' in file 'ref.bib', skipping ...
+[165] Biber.pm:131> WARN - Duplicate entry key: 'chaoyi2025' in file 'ref.bib', skipping ...
+[165] Biber.pm:131> WARN - Duplicate entry key: 'guthaus2001' in file 'ref.bib', skipping ...
+[165] Biber.pm:131> WARN - Duplicate entry key: 'hajali2020' in file 'ref.bib', skipping ...
+[165] Biber.pm:133> INFO - WARNINGS: 4

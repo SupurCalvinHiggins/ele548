@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage{biblatex}
+
+\addbibresource{ref.bib}
+
+\title{ELE 548: Project Proposal}
+
+\author{Calvin Higgins}
+
+\begin{document}
+
+\maketitle
+
+% Submit by Nov 20th. Progress reports should include a revised version of the proposal (if necessary).
+% Primarily I am looking for a one to two pages document describing accomplishments so far and a weekly
+% plan of work for the remainder of the semester. Concentrate on describing sub-tasks completed, rather than
+% the tasks started.
+% Your report should include the following:
+% + What parts of design specification are complete
+% + Design implementations status. For example, if you are modifying a simulator, what mods are
+% done
+% + Outline of planned experiments. This can evolve and change, but I want you to have thought of
+% an initial plan.
+% + Finally, whatever questions/comments I marked on the proposal (or we have discussed during our
+% project meetings) must be addressed. Include a response to the questions
+
+\section{Completed Tasks}
+
+\subsection{Learn Reinforcement Learning}
+
+As I have no prior reinforcement learning experience, I completed a reinforcement learning tutorial from the \texttt{pytorch} documentation. I trained a deep 
+Q-network (DQN) to balance a pole on a cart by moving left or right. 
+
+\subsection{Install CompilerGym}
+
+I installed CompilerGym~\cite{cummins2022}, the standard framework for reinforcement learning in compilers. This was surprisingly difficult: CompilerGym is not 
+actively maintained, many of its requirements are deprecated, and compilers are generally challenging to install correctly. I got CompilerGym working with 
+\texttt{docker} using GPU passthrough and the \texttt{uv} package manager. 
+
+\subsection{Implement DQN}
+
+To keep things simple and fast, I implemented a DQN as my initial model and targeted IR instruction count reduction.  
+
+% TODO: mention implementation characteristics (autophase, etc)
+
+\subsection{Run Initial Experiments}
+
+I verified my implementation by optimizing IR instruction counts on several benchmark suites. To keep things simple and fast, I did not use a held-out test set. 
+After (painful amounts of) tuning, I was able to successfully overfit a single benchmark (quicksort), the CHStone suite~\cite{hara2008} (12 benchmarks) and the 
+cBench suite (23 benchmarks)~\cite{fursin2014}, outperforming \texttt{-Oz} on average. I was not able to outperform \texttt{-Oz} on the MiBench 
+suite~\cite{guthaus2001} (40 benchmarks). Initially, I thought that my model was struggling to learn as the number of programs increased, however, it turns out 
+that it's just very hard to beat \texttt{-Oz} on MiBench~\cite{chaoyi2025}. After realizing this, I tried the Tensorflow suite~\cite{abadi2016} 
+(1985 benchmarks), and beat \texttt{-Oz} on average. Notably, my training run crashed because the size of an optimized program became zero, indicating either 
+(1) a compiler bug or (2) a Tensorflow bug. Unfortunately, I did not record enough data to determine which actually happened.
+
+\section{Remaining Tasks}
+
+\subsection{Monitoring Infrastructure}
+
+% 1. finish monitoring infra.
+
+\subsection{Feature Representation}
+
+% 2. optimize features (note limiation in compilerdream), rewards
+
+\subsection{Evaluation}
+
+% 3. add test-set evaluation
+
+
+\subsection{EfficientZero}
+
+% TODOs:
+% 4. implemented muzero/efficientzero (note limitation in compilerdream)
+
+\printbibliography
+
+\end{document}
