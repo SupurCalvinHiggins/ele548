@@ -1,7 +1,7 @@
 import math
 from contextlib import ExitStack
 from dataclasses import dataclass, field
-from typing import List
+from typing import Iterable, List, Optional
 from warnings import catch_warnings
 
 import matplotlib.pyplot as plt
@@ -47,7 +47,7 @@ class Config:
     # Epsilon-greedy parameters.
     eps_start: float = 0.9
     eps_end: float = 0.01
-    eps_decay: int = 10_000
+    eps_decay: int = 25_000
     # Model parameters.
     hidden_size: int = 256
     # Training parameters.
@@ -74,6 +74,7 @@ class Config:
 # reward, Q-value
 # action distribution
 # action had no effect (in info)
+# Use geomean for sliding windows
 
 
 @dataclass
@@ -203,35 +204,38 @@ def train_episode_batch(sys: System, cfg: Config, stat: Statistics) -> None:
     )
 
 
+def plot_with_moving_average(
+    cfg: Config,
+    data: Iterable,
+    label: str,
+    color: Optional[str] = None,
+    ma_color: Optional[str] = None,
+) -> None:
+    y = torch.tensor(data)
+    plt.plot(y.numpy(), label=label, color=color, zorder=0)
+    if len(y) >= cfg.window_size:
+        pad_value = y[: cfg.window_size].mean()
+        ma = y.unfold(0, cfg.window_size, 1).mean(1).view(-1)
+        ma = torch.cat((torch.full((cfg.window_size - 1,), pad_value), ma))
+        plt.plot(ma.numpy(), label=f"{label} Moving Average", color=ma_color, zorder=1)
+
+
 def plot_statistics(cfg: Config, stat: Statistics) -> None:
     plt.clf()
-
-    improvement_factors = torch.tensor(stat.improvement_factors)
-    plt.plot(improvement_factors.numpy(), label="DQN")
-
-    oz_improvement_factors = torch.tensor(stat.oz_improvement_factors)
-    plt.plot(oz_improvement_factors.numpy(), label="-Oz")
-
-    if improvement_factors.size(0) >= cfg.window_size:
-        ma_improvement_factors = (
-            improvement_factors.unfold(0, cfg.window_size, 1).mean(1).view(-1)
-        )
-        ma_improvement_factors = torch.cat(
-            (torch.ones(cfg.window_size - 1), ma_improvement_factors)
-        )
-        plt.plot(ma_improvement_factors.numpy(), label="DQN Moving Average")
-
-        ma_oz_improvement_factors = (
-            oz_improvement_factors.unfold(0, cfg.window_size, 1).mean(1).view(-1)
-        )
-        ma_oz_improvement_factors = torch.cat(
-            (
-                torch.ones(cfg.window_size - 1),
-                ma_oz_improvement_factors,
-            )
-        )
-        plt.plot(ma_oz_improvement_factors.numpy(), label="-Oz Moving Average")
-
+    plot_with_moving_average(
+        cfg,
+        stat.improvement_factors,
+        label="DQN",
+        color="lightblue",
+        ma_color="darkblue",
+    )
+    plot_with_moving_average(
+        cfg,
+        stat.oz_improvement_factors,
+        label="-Oz",
+        color="orange",
+        ma_color="red",
+    )
     plt.xlabel("Episode")
     plt.ylabel("IR Instruction Count Improvement Factor over -O0")
     plt.legend()
@@ -245,13 +249,17 @@ def plot_statistics(cfg: Config, stat: Statistics) -> None:
     plt.savefig("scaled_states.png")
 
     plt.clf()
-    plt.plot(stat.gradient_norms, label="Gradient Norm")
+    plot_with_moving_average(
+        cfg,
+        stat.gradient_norms,
+        label="Gradient Norm",
+    )
     plt.xlabel("Step")
     plt.legend()
     plt.savefig("grad_norm.png")
 
     plt.clf()
-    plt.plot(stat.losses, label="Loss")
+    plot_with_moving_average(cfg, stat.losses, label="Loss")
     plt.xlabel("Step")
     plt.legend()
     plt.savefig("loss.png")
@@ -276,10 +284,12 @@ def train(sys: System, cfg: Config, stat: Statistics) -> None:
 
 def make_env(env: CompilerEnv, cfg: Config) -> CompilerEnv:
     env = TimeLimit(env, max_episode_steps=cfg.steps_per_episode)
-    # env = RandomOrderBenchmarks(env, env.datasets["benchmark://jotaibench-v0"])
-    env = RandomOrderBenchmarks(env, env.datasets["benchmark://mibench-v1"])
-    # env = RandomOrderBenchmarks(env, env.datasets["benchmark://chstone-v0"])
     # env.reset(benchmark="benchmark://cbench-v1/qsort")
+    # env = RandomOrderBenchmarks(env, env.datasets["benchmark://chstone-v0"])
+    # env = RandomOrderBenchmarks(env, env.datasets["benchmark://cbench-v1"])
+    # env = RandomOrderBenchmarks(env, env.datasets["benchmark://mibench-v1"])
+    env = RandomOrderBenchmarks(env, env.datasets["benchmark://tensorflow-v0"])
+    # env = RandomOrderBenchmarks(env, env.datasets["benchmark://jotaibench-v0"])
     """env = ConstrainedCommandline(
         env,
         flags=[

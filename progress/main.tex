@@ -1,0 +1,234 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{svg}
+\usepackage{biblatex}[backend=biber]
+
+\addbibresource{ref.bib}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\title[ELE 548: Progress Report]
+{ELE 548: Progress Report}
+
+\author
+{Calvin Higgins}
+
+\institute[]
+{
+  Department of Computer Science and Statistics\\
+  University of Rhode Island
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\frame{\titlepage}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Project Overview}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{approach.png}
+    \caption{Reinforcement learning for the phase-ordering problem. Adapted from \cite{chaoyi2025}.}
+\end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{CartPole Implementation}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{cart_pole.png}
+    \caption{CartPole, an introductory reinforcement learning environment.}
+\end{figure}
+
+\end{frame}
+
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{CompilerGym Setup}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.15]{compilergym.png}
+    \caption{CompilerGym architecture~\cite{cummins2022}.}
+\end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Deep Q-Network Rollout Implementation}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{rollout.png}
+\end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Deep Q-Network Training Implementation}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{train.png}
+\end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{QSort ($n=1$)}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{qsort_improvement_factor.png}
+\end{figure}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{CHStone~\cite{hara2008} ($n=12$)}
+
+\begin{center}
+    \includegraphics[scale=0.6]{chstone_improvement_factor.png}
+\end{center}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{MiBench~\cite{guthaus2001} ($n=40$)}
+
+\begin{center}
+    \includegraphics[scale=0.6]{mibench_improvement_factor.png}
+\end{center}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Tensorflow~\cite{abadi2016} ($n=1985$)}
+
+\begin{center}
+    \includegraphics[scale=0.6]{tensorflow_improvement_factor.png}
+\end{center}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Tensorflow~\cite{abadi2016} ($n=1985$)}
+
+\begin{center}
+    \includegraphics[scale=0.4]{bug.png}
+\end{center}
+
+\end{frame}
+
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Remaining Tasks}
+
+\textbf{Monitoring (1 day):}
+\begin{enumerate}
+    \item Track additional statistics 
+    \begin{enumerate}
+        \item Rewards, actions, Q-values, instruction counts
+    \end{enumerate}
+\end{enumerate}
+
+\vspace{1em}
+
+\textbf{Feature Engineering (1 week):}
+\begin{enumerate}
+    \item Normalize inputs and rewards to baseline program
+    \item Pre-train auto-encoder on Autophase~\cite{hajali2020} features
+    \item Try Transformer encoder on inst2vec~\cite{bennun2018} embeddings
+\end{enumerate}
+
+\vspace{1em}
+
+\textbf{Evaluation (1 day):}
+\begin{enumerate}
+    \item Evaluate on held-out test-sets
+\end{enumerate}
+
+\vspace{1em}
+
+\textbf{Model (1 week):}
+\begin{enumerate}
+    \item Implement MuZero
+    \item Implement EfficientZero
+\end{enumerate}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% Slide
+% ------------------------------------------------------------
+
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+
+\printbibliography
+
+\end{frame}
+
+\end{document}

@@ -130,6 +130,7 @@ class DQN(nn.Module):
 # epsilon greedy value
 # action had no effect (in info)
 # make a new Statistics structure, rename existing ones
+# handle the case where the optimized program size is 0
 
 
 @dataclass
