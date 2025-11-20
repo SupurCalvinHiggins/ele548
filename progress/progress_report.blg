@@ -1,20 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'progress_report.blg'
-[38] biber:340> INFO - === Wed Nov 19, 2025, 15:58:46
+[36] biber:340> INFO - === Thu Nov 20, 2025, 10:53:22
 [46] Biber.pm:419> INFO - Reading 'progress_report.bcf'
-[77] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
-[83] Biber.pm:4419> INFO - Processing section 0
-[89] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
-[90] bibtex.pm:1713> INFO - LaTeX decoding ...
-[99] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[163] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[163] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[163] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[163] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[166] bbl.pm:660> INFO - Writing 'progress_report.bbl' with encoding 'UTF-8'
-[168] bbl.pm:763> INFO - Output to progress_report.bbl
-[168] Biber.pm:131> WARN - Duplicate entry key: 'cummins2022' in file 'ref.bib', skipping ...
-[169] Biber.pm:131> WARN - Duplicate entry key: 'chaoyi2025' in file 'ref.bib', skipping ...
-[169] Biber.pm:131> WARN - Duplicate entry key: 'guthaus2001' in file 'ref.bib', skipping ...
-[169] Biber.pm:131> WARN - Duplicate entry key: 'hajali2020' in file 'ref.bib', skipping ...
-[169] Biber.pm:133> INFO - WARNINGS: 4
+[76] Biber.pm:979> INFO - Found 9 citekeys in bib section 0
+[82] Biber.pm:4419> INFO - Processing section 0
+[87] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[88] bibtex.pm:1713> INFO - LaTeX decoding ...
+[98] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[174] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[174] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[174] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[175] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[179] bbl.pm:660> INFO - Writing 'progress_report.bbl' with encoding 'UTF-8'
+[182] bbl.pm:763> INFO - Output to progress_report.bbl
+[182] Biber.pm:131> WARN - Duplicate entry key: 'cummins2022' in file 'ref.bib', skipping ...
+[182] Biber.pm:131> WARN - Duplicate entry key: 'chaoyi2025' in file 'ref.bib', skipping ...
+[182] Biber.pm:131> WARN - Duplicate entry key: 'guthaus2001' in file 'ref.bib', skipping ...
+[182] Biber.pm:131> WARN - Duplicate entry key: 'hajali2020' in file 'ref.bib', skipping ...
+[182] Biber.pm:133> INFO - WARNINGS: 4

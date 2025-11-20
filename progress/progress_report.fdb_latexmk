@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber progress_report"] 1763585926.3726 "progress_report.bcf" "progress_report.bbl" "progress_report" 1763585964.51644 0
-  "progress_report.bcf" 1763585964.48837 108083 31e01b5695e508301e2b9f1d68f02f47 "pdflatex"
+["biber progress_report"] 1763654002.371 "progress_report.bcf" "progress_report.bbl" "progress_report" 1763654007.80885 0
+  "progress_report.bcf" 1763654007.78058 108274 f74f59beba42f848bf7313f5c654a2d6 "pdflatex"
   "ref.bib" 1763585925.26596 12014 263eceb8341762f02af4d526663b0c33 ""
   (generated)
   "progress_report.bbl"
   "progress_report.blg"
   (rewritten before read)
-["pdflatex"] 1763585964.02182 "/home/calvin/Documents/uri/ele548/project/ele548/progress/progress_report.tex" "progress_report.pdf" "progress_report" 1763585964.51666 0
+["pdflatex"] 1763654007.25853 "/home/calvin/Documents/uri/ele548/project/ele548/progress/progress_report.tex" "progress_report.pdf" "progress_report" 1763654007.80907 0
   "/etc/texmf/web2c/texmf.cnf" 1757121109.70358 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/calvin/Documents/uri/ele548/project/ele548/progress/progress_report.tex" 1763585963.87335 3435 e0df3389f4d1d01fee6435becc3d59c3 ""
+  "/home/calvin/Documents/uri/ele548/project/ele548/progress/progress_report.tex" 1763654007.07057 4446 84261db11865e684e9dcb58a391a7483 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
@@ -62,10 +62,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757167879.68467 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757167955 8216300 293e058415e0658b42867906338bd8ca ""
-  "progress_report.aux" 1763585964.48837 2021 19502299bdf0387c0ce543991e839199 "pdflatex"
-  "progress_report.bbl" 1763585926.90813 15065 27a8ebcf06d268621e0d7e69e5a2a8a9 "biber progress_report"
-  "progress_report.run.xml" 1763585964.49078 2375 cf2cdb13962c987b29fff64d35d515d5 "pdflatex"
-  "progress_report.tex" 1763585963.87335 3435 e0df3389f4d1d01fee6435becc3d59c3 ""
+  "progress_report.aux" 1763654007.77958 2399 d574c5fe7da2ffb84cf4fc6284990b0a "pdflatex"
+  "progress_report.bbl" 1763654002.95057 20401 6d23573f8c09bc95d086c5c1d5b33c4e "biber progress_report"
+  "progress_report.run.xml" 1763654007.78206 2375 cf2cdb13962c987b29fff64d35d515d5 "pdflatex"
+  "progress_report.tex" 1763654007.07057 4446 84261db11865e684e9dcb58a391a7483 ""
   (generated)
   "progress_report.aux"
   "progress_report.bcf"

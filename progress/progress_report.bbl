@@ -147,6 +147,38 @@
       \field{title}{TensorFlow: a system for large-scale machine learning}
       \field{year}{2016}
     \endentry
+    \entry{bennun2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f197c39c9873860e113582f963ac1e68}{%
+           family={Ben-Nun},
+           familyi={B\bibinithyphendelim N\bibinitperiod},
+           given={Tal},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c3f20df7841d4461f6ed75ba61fc36ba}{%
+           family={Jakobovits},
+           familyi={J\bibinitperiod},
+           given={Alice\bibnamedelima Shoshana},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=76ec76312292adb42427d46f3efb852b}{%
+           family={Hoefler},
+           familyi={H\bibinitperiod},
+           given={Torsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6aaac6ae675cfe8ffea898357044aadb}
+      \strng{fullhash}{6aaac6ae675cfe8ffea898357044aadb}
+      \strng{bibnamehash}{6aaac6ae675cfe8ffea898357044aadb}
+      \strng{authorbibnamehash}{6aaac6ae675cfe8ffea898357044aadb}
+      \strng{authornamehash}{6aaac6ae675cfe8ffea898357044aadb}
+      \strng{authorfullhash}{6aaac6ae675cfe8ffea898357044aadb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Neural Information Processing Systems (NeurIPS)}
+      \field{title}{Neural code comprehension: a learnable representation of code semantics}
+      \field{year}{2018}
+    \endentry
     \entry{cummins2022}{inproceedings}{}
       \name{author}{12}{}{%
         {{hash=7804f5ee53ee7835a0e40e798d87b1bb}{%
@@ -344,6 +376,58 @@
       \verb 10.1109/WWC.2001.990739
       \endverb
     \endentry
+    \entry{hajali2020}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=f38ffbe4f1e57086907729e8357603f2}{%
+           family={Haj-Ali},
+           familyi={H\bibinithyphendelim A\bibinitperiod},
+           given={Ameer},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e412efa626862739abf0895b7c2e50a1}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Qijing\bibnamedelima (Jenny)},
+           giveni={Q\bibinitperiod\bibinitdelim (\bibinitperiod}}}%
+        {{hash=79b0c1f423eb23bed7061048716c7736}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7137aafb02f44e916e307014d40cb95e}{%
+           family={Moses},
+           familyi={M\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ab8b3b256286cedf287deca6326c7db0}{%
+           family={Asanovic},
+           familyi={A\bibinitperiod},
+           given={Krste},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7c5707dcdf08e5d9523a0c85eea969ff}{%
+           family={Wawrzynek},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=51d9ef26181e2e8a9dc546b401e0bb26}{%
+           family={Stoica},
+           familyi={S\bibinitperiod},
+           given={Ion},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f899e1af77766be27b89b27e52d146cd}
+      \strng{fullhash}{1435623d5f9d9b2190f6396e2a73eca3}
+      \strng{bibnamehash}{f899e1af77766be27b89b27e52d146cd}
+      \strng{authorbibnamehash}{f899e1af77766be27b89b27e52d146cd}
+      \strng{authornamehash}{f899e1af77766be27b89b27e52d146cd}
+      \strng{authorfullhash}{1435623d5f9d9b2190f6396e2a73eca3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Machine Learning and Systems (MLSys)}
+      \field{title}{AutoPhase: Juggling HLS Phase Orderings in Random Forests with Deep Reinforcement Learning}
+      \field{year}{2020}
+    \endentry
     \entry{hara2008}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=69c0b7f290bd204be906d38b41b9a0e7}{%
@@ -388,6 +472,48 @@
       \verb{doi}
       \verb 10.1109/ISCAS.2008.4541637
       \endverb
+    \endentry
+    \entry{ye2021}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=119346c0749953c9169a3e08144eb042}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Weirui},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f441c03dee89a6c9491367e808d1bdc2}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shaohuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9b11af4841b4b3e436a27b0f140f45e3}{%
+           family={Kurutach},
+           familyi={K\bibinitperiod},
+           given={Thanard},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e28d4ee199593959d8c29980a64f1974}{%
+           family={Abbeel},
+           familyi={A\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9c1ecb1f7c47cf02e9e994296746328c}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{fullhash}{3c47a809330452b7725bd5bb7935c771}
+      \strng{bibnamehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{authorbibnamehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{authornamehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{authorfullhash}{3c47a809330452b7725bd5bb7935c771}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Neural Information Processing Systems (NeurIPS)}
+      \field{title}{Mastering Atari Games with Limited Data}
+      \field{year}{2021}
     \endentry
   \enddatalist
 \endrefsection

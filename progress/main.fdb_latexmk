@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1763582049.39933 "main.bcf" "main.bbl" "main" 1763582049.90458 0
-  "main.bcf" 1763581425.25378 108212 7b38747c0ed37a6dbae616189f8c6ea2 "pdflatex"
-  "ref.bib" 1763582049.2484 11991 d92a82ea72417fec5faa7694432191fc ""
+["biber main"] 1763653774.15036 "main.bcf" "main.bbl" "main" 1763653780.0093 0
+  "main.bcf" 1763653779.94871 108346 631e72e476df754218e4147e7741e174 "pdflatex"
+  "ref.bib" 1763585925.26596 12014 263eceb8341762f02af4d526663b0c33 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1763581423.71929 "/home/calvin/Documents/uri/ele548/project/ele548/progress/main.tex" "main.pdf" "main" 1763582049.90461 0
+["pdflatex"] 1763653778.13937 "/home/calvin/Documents/uri/ele548/project/ele548/progress/main.tex" "main.pdf" "main" 1763653780.00953 0
   "/etc/texmf/web2c/texmf.cnf" 1757121109.70358 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/calvin/Documents/uri/ele548/project/ele548/progress/main.tex" 1763581423.56442 5072 08664b40e831e8445951badf72bf93cd ""
+  "/home/calvin/Documents/uri/ele548/project/ele548/progress/main.tex" 1763653771.70471 5121 fb67514a9a5b0e99533180894ad981ab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -236,12 +236,12 @@
   "cart_pole.png" 1763598846 1506 a2461c961b139629e22a9f065d08e084 ""
   "chstone_improvement_factor.png" 1763598846 54978 f65abcbc550f796b7a6b9627ca98194d ""
   "compilergym.png" 1763598846 60618 c95fc4b927b89225414824b8785c82fc ""
-  "main.aux" 1763581425.25234 3614 9963202758633b82881d9c3b97627f5d "pdflatex"
-  "main.bbl" 1763582049.88317 17768 9a2ee1adac2d5c15c8d9a76669fc6756 "biber main"
-  "main.nav" 1763581425.25495 1634 a65e74e9001b41ac343474efb2643ca1 "pdflatex"
-  "main.out" 1763581425.25336 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
-  "main.run.xml" 1763581425.25495 2298 9255f4d2cb39a5ffeeda22d5a40b248a "pdflatex"
-  "main.tex" 1763581423.56442 5072 08664b40e831e8445951badf72bf93cd ""
+  "main.aux" 1763653779.947 4011 06f9975cf712951f860eecaa71a72bc1 "pdflatex"
+  "main.bbl" 1763653774.72978 21477 e1247b89a1a562ff5cfd416fd7bcb9b6 "biber main"
+  "main.nav" 1763653779.95002 1726 bcff81410bce65226b4b107a246350f7 "pdflatex"
+  "main.out" 1763653779.94804 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
+  "main.run.xml" 1763653779.95002 2298 9255f4d2cb39a5ffeeda22d5a40b248a "pdflatex"
+  "main.tex" 1763653771.70471 5121 fb67514a9a5b0e99533180894ad981ab ""
   "mibench_improvement_factor.png" 1763598846 64072 39ab8e2e746550b04ef13b70cecdea2a ""
   "qsort_improvement_factor.png" 1763598846 49314 ffc7eeb0b38aff88141b89187ccc2fff ""
   "rollout.png" 1763598846 69199 2d5f1c4a32f9ce424bf32f641df04181 ""

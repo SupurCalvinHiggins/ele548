@@ -40,39 +40,41 @@ actively maintained, many of its requirements are deprecated, and compilers are 
 
 \subsection{Implement DQN}
 
-To keep things simple and fast, I implemented a DQN as my initial model and targeted IR instruction count reduction.  
-
-% TODO: mention implementation characteristics (autophase, etc)
+I tried to keep my initial implementation simple and fast. I implemented an epsilon-greedy DQN and targeted IR instruction count reduction. I used Autophase 
+features~\cite{hajali2020} extracted from the IR code as the program representation. Since Autophase features are integer values with high variance, I 
+standardized them with Welford's online algorithm. 
 
 \subsection{Run Initial Experiments}
 
-I verified my implementation by optimizing IR instruction counts on several benchmark suites. To keep things simple and fast, I did not use a held-out test set. 
-After (painful amounts of) tuning, I was able to successfully overfit a single benchmark (quicksort), the CHStone suite~\cite{hara2008} (12 benchmarks) and the 
-cBench suite (23 benchmarks)~\cite{fursin2014}, outperforming \texttt{-Oz} on average. I was not able to outperform \texttt{-Oz} on the MiBench 
-suite~\cite{guthaus2001} (40 benchmarks). Initially, I thought that my model was struggling to learn as the number of programs increased, however, it turns out 
-that it's just very hard to beat \texttt{-Oz} on MiBench~\cite{chaoyi2025}. After realizing this, I tried the Tensorflow suite~\cite{abadi2016} 
-(1985 benchmarks), and beat \texttt{-Oz} on average. Notably, my training run crashed because the size of an optimized program became zero, indicating either 
-(1) a compiler bug or (2) a Tensorflow bug. Unfortunately, I did not record enough data to determine which actually happened.
+I verified my implementation by optimizing IR instruction counts on several benchmark suites. Again, to keep the initial implementation simple and fast, I did 
+not use a held-out test set. After (painful amounts of) tuning, I was able to successfully overfit a single benchmark (quicksort), the CHStone 
+suite~\cite{hara2008} (12 benchmarks) and the cBench suite (23 benchmarks)~\cite{fursin2014}, outperforming \texttt{-Oz} on average. I was not able to 
+outperform \texttt{-Oz} on the MiBench suite~\cite{guthaus2001} (40 benchmarks). Initially, I thought that my model was struggling to learn as the number of 
+programs increased, however, it turns out that it's just very hard to beat \texttt{-Oz} on MiBench~\cite{chaoyi2025}. After realizing this, I tried the 
+Tensorflow suite~\cite{abadi2016} (1985 benchmarks), and beat \texttt{-Oz} on average. Notably, my training run crashed because the size of an optimized program
+became zero, indicating either (1) a compiler bug or (2) a Tensorflow bug. Unfortunately, I did not record enough data to determine which actually happened.
 
 \section{Remaining Tasks}
 
 \subsection{Monitoring Infrastructure}
 
-% 1. finish monitoring infra.
+I implemented some infrastructure for monitoring relevant metrics such as gradient norms and losses. However, before moving on, I want to add monitoring for 
+the reward, action, Q-value, and IR instruction count distributions to inform later design decisions. I estimate this will take around one day of work.
 
 \subsection{Feature Representation}
 
-% 2. optimize features (note limiation in compilerdream), rewards
+I believe the feature representation can be greatly improved. I have several ideas I want to try including normalizing inputs and rewards to the baseline 
+state, pretrain an autoencoder on Autophase features, and try an Transformer encoder with inst2vec embeddings~\cite{bennun2018}. I estimate this will take 
+around one week of work.
 
 \subsection{Evaluation}
 
-% 3. add test-set evaluation
-
+Currently, I am not evaluating on a held-out test set. This is bad for comparison but fine for experimentation since phase-ordering is very hard to overfit. I 
+need to add evaluation on a held-out test set. I estimate this will take around one day of work. 
 
 \subsection{EfficientZero}
 
-% TODOs:
-% 4. implemented muzero/efficientzero (note limitation in compilerdream)
+I need to replace the DQN with EfficientZero~\cite{ye2021}. I estimate this will take around one week of work.
 
 \printbibliography
 

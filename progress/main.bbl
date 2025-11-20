@@ -451,6 +451,96 @@
       \verb 10.1109/ISCAS.2008.4541637
       \endverb
     \endentry
+    \entry{schrittwieser2021}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=8fad8df927bc0014c0bd6a9feb7aa71d}{%
+           family={Schrittwieser},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=80c63e95a9e243591a33a7e3156f1d78}{%
+           family={Hubert},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=23c3d5df102bae09f159b021bf98bd8a}{%
+           family={Mandhane},
+           familyi={M\bibinitperiod},
+           given={Amol},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fbfb34f479cd527a33599aa9185f7bee}{%
+           family={Barekatain},
+           familyi={B\bibinitperiod},
+           given={Mohammadamin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=af540e84ef1ecdaa70b1f7c90f59fd7d}{%
+           family={Antonoglou},
+           familyi={A\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba8dd9d821587916ffa0d5d85ba62066}
+      \strng{fullhash}{075141fe54b456184d145f70bef41132}
+      \strng{bibnamehash}{ba8dd9d821587916ffa0d5d85ba62066}
+      \strng{authorbibnamehash}{ba8dd9d821587916ffa0d5d85ba62066}
+      \strng{authornamehash}{ba8dd9d821587916ffa0d5d85ba62066}
+      \strng{authorfullhash}{075141fe54b456184d145f70bef41132}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Neural Information Processing Systems (NeurIPS)}
+      \field{isbn}{9781713845393}
+      \field{title}{Online and offline reinforcement learning by planning with a learned model}
+      \field{year}{2021}
+    \endentry
+    \entry{ye2021}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=119346c0749953c9169a3e08144eb042}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Weirui},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f441c03dee89a6c9491367e808d1bdc2}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shaohuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9b11af4841b4b3e436a27b0f140f45e3}{%
+           family={Kurutach},
+           familyi={K\bibinitperiod},
+           given={Thanard},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e28d4ee199593959d8c29980a64f1974}{%
+           family={Abbeel},
+           familyi={A\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9c1ecb1f7c47cf02e9e994296746328c}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{fullhash}{3c47a809330452b7725bd5bb7935c771}
+      \strng{bibnamehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{authorbibnamehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{authornamehash}{bceae5bd124d719847dd2c8c56b20904}
+      \strng{authorfullhash}{3c47a809330452b7725bd5bb7935c771}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Neural Information Processing Systems (NeurIPS)}
+      \field{title}{Mastering Atari Games with Limited Data}
+      \field{year}{2021}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
