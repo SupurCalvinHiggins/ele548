@@ -290,26 +290,6 @@ def make_env(env: CompilerEnv, cfg: Config) -> CompilerEnv:
     # env = RandomOrderBenchmarks(env, env.datasets["benchmark://mibench-v1"])
     env = RandomOrderBenchmarks(env, env.datasets["benchmark://tensorflow-v0"])
     # env = RandomOrderBenchmarks(env, env.datasets["benchmark://jotaibench-v0"])
-    """env = ConstrainedCommandline(
-        env,
-        flags=[
-            "-break-crit-edges",
-            "-early-cse-memssa",
-            "-gvn-hoist",
-            "-gvn",
-            "-instcombine",
-            "-instsimplify",
-            "-jump-threading",
-            "-loop-reduce",
-            "-loop-rotate",
-            "-loop-versioning",
-            "-mem2reg",
-            "-newgvn",
-            "-reg2mem",
-            "-simplifycfg",
-            "-sroa",
-        ],
-    )"""
     env.observation_space = "Autophase"
     env.reward_space = "IrInstructionCount"
     return env

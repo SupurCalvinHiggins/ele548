@@ -13,5 +13,8 @@ uv run python -m pip install compiler-gym
 uv run python -m pip install torch
 uv run python -m pip install matplotlib
 uv run python -m pip install tqdm
+uv run python -m pip install scipy
+uv run python -m pip install ray 
+uv run python -m pip install tensorboard
 
 rm -rf get-pip.py
