@@ -10,7 +10,7 @@ class Config:
     # Epsilon-greedy parameters.
     epsilon_greedy_start: float = 0.9
     epsilon_greedy_end: float = 0.01
-    epsilon_greedy_duration: int = 25_000
+    epsilon_greedy_duration: int = 32 * 1024
 
     # Environment parameters.
     observation_space: str = "Autophase"
@@ -18,29 +18,30 @@ class Config:
     cost: str = "IrInstructionCount"
     baseline_cost: str = "IrInstructionCountOz"
     
-    dataset: str = "benchmark://jotaibench-v0" # "benchmark://anghabench-v1" # "benchmark://chstone-v0"
+    dataset: str = "benchmark://anghabench-v1" # "benchmark://chstone-v0"
     use_binary_reward: bool = False
-    steps_per_episode: int = 256
+    steps_per_episode: int = 64
 
     # Model parameters.
-    hidden_size: int = 256
+    hidden_size: int = 512
+    use_autoencoder: bool = True
     
     # Training parameters.
-    episodes: int = 8 * 1024
+    episodes: int = 16 * 1024
     envs: int = 32
     batchs_per_episode: int = 64
     batch_size: int = 128
     gamma: float = 0.99
 
     # Optimizer parameters.
-    lr: float = 3e-5
+    lr: float = 5e-5
 
     # Memory parameters.
-    memory_capacity: int = 10_000
-    memory_capacity_min: int = 1_000
+    memory_capacity: int = 8 * 1024
+    memory_capacity_min: int = 4 * 1024
 
     # Gradient clipping.
-    gradient_norm_max: float = 80.0
+    gradient_norm_max: float = 10.0
 
     # Soft updates.
-    tau: float = 0.005
+    tau: float = 0.001

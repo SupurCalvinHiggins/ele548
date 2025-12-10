@@ -9,6 +9,7 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import torch.nn.functional as F
 from torch import Tensor
 
 from model import DQN
@@ -27,7 +28,7 @@ def linear_schedule(start: float, end: float, duration: int, t: int) -> float:
 
 
 def sample_policy_actions(model: DQN, observations: Tensor) -> Tensor:
-    policy_actions = model.policy(observations).argmax(dim=-1).view(-1)
+    policy_actions = model.policy(observations)[0].argmax(dim=-1).view(-1)
     return policy_actions
 
 
@@ -56,17 +57,23 @@ def rollout_step(state: State, cfg: Config, logger: Logger) -> None:
     logger.log("epsilon_greedy_threshold", threshold)
 
     actions = sample_epsilon_greedy_actions(policy_actions, random_actions, threshold)
-    next_observations, rewards, uris = state.env.step(actions)
+    next_observations, rewards, dones, uris = state.env.step(actions)
     if cfg.use_binary_reward:
         rewards = rewards.sign()
     # logger.log("rewards", rewards.tolist())
+    if any(dones):
+        return True
+
     costs = state.env.costs
     if (costs == 0).any():
         idx = (costs == 0).nonzero().tolist()
         for i in idx:
-            print("zero_cost:", uris[i])
-            logger.log("zero_cost", uris[i])
+            print("zero_cost:", uris[i[0]])
+            logger.log("zero_cost", str(uris[i[0]]))
+        return True
+        
     state.memory.push(observations, actions, next_observations, rewards, uris)
+    return False
 
 
 @torch.no_grad()
@@ -74,17 +81,20 @@ def train_step(state: State, cfg: Config, logger: Logger) -> None:
     state.model.train()
     observations, actions, next_observations, rewards, _ = state.memory.sample(cfg.batch_size)
     
-    next_observation_values = state.model.target(next_observations).max(1).values
+    next_observation_values = state.model.target(next_observations)[0].max(1).values
     expected_observation_action_values = (next_observation_values * cfg.gamma) + rewards
 
     criterion = nn.SmoothL1Loss()
     state.opt.zero_grad()
 
     with torch.enable_grad():
-        observation_action_values = state.model.policy(observations).gather(
+        out, encoder_out = state.model.policy(observations)
+        observation_action_values = out.gather(
             1, actions.unsqueeze(1)
         )
         loss = criterion(observation_action_values, expected_observation_action_values.unsqueeze(1))
+        if encoder_out is not None:
+            loss += 0.1 * (F.mse_loss(encoder_out, observations, reduction='none') / (observations.var(dim=0, unbiased=False, keepdim=True) + 1e-6)).mean()
         loss.backward()
 
     gradient_norm = torch.nn.utils.clip_grad_norm_(
@@ -112,19 +122,23 @@ def train(state: State, cfg: Config, logger: Logger) -> None:
         
         start_costs = state.env.costs
         baseline_end_costs = state.env.baseline_costs
+        end_costs = state.env.costs
 
         for _ in range(cfg.steps_per_episode):
-            rollout_step(state, cfg, logger)
+            if rollout_step(state, cfg, logger):
+                break
+            end_costs = state.env.costs
+
             if len(state.memory) < cfg.memory_capacity_min:
                 continue
             
             for _ in range(cfg.batchs_per_episode):
                 train_step(state, cfg, logger)
         
-        end_costs = state.env.costs
-
-        improvement_factor = (start_costs / end_costs).log().mean().exp().item()
-        baseline_improvement_factor = (start_costs / baseline_end_costs).log().mean().exp().item()
+        improvement_factor = (start_costs / (end_costs + 1e-5)).log().mean().exp().item()
+        baseline_improvement_factor = (start_costs / (baseline_end_costs + 1e-5)).log().mean().exp().item()
+        print("improvement_factor =", improvement_factor)
+        print("baseline_improvement_factor =", baseline_improvement_factor)
 
         logger.log("improvement_factor", improvement_factor)
         logger.log("baseline_improvement_factor", baseline_improvement_factor)
@@ -138,7 +152,7 @@ def main(cfg: Config) -> None:
         n_observations = env.n_observations
         n_actions = env.n_actions
         
-        model = DQN(n_observations, n_actions, cfg.hidden_size).to(device)
+        model = DQN(n_observations, n_actions, cfg.hidden_size, cfg.use_autoencoder).to(device)
         opt = optim.AdamW(model.policy.parameters(), lr=cfg.lr, amsgrad=True)
         
         memory = Memory(capacity=cfg.memory_capacity, observation_shape=(n_observations,)).to(
@@ -176,16 +190,17 @@ def sweep(result_path: Path) -> None:
         "baseline_cost": ["IrInstructionCountOz"],
         "dataset": ["benchmark://anghabench-v1"],
         "use_binary_reward": [True, False],
-        "steps_per_episode": [64, 128],
+        "use_autoencoder": [True, False],
+        "steps_per_episode": [64],
         "hidden_size": [256, 512],
-        "episodes": [512],
+        "episodes": [1024],
         "envs": [32],
-        "batches_per_episode": [32],
+        "batchs_per_episode": [32],
         "batch_size": [128],
         "gamma": [0.99],
         "lr": [5e-4, 5e-5],
-        "memory_capacity": [64 * 1024],
-        "memory_capacity_min": [8 * 1024],
+        "memory_capacity": [8 * 1024],
+        "memory_capacity_min": [4 * 1024],
         "gradient_norm_max": [10.0],
         "tau": [0.001],
     }
@@ -194,9 +209,10 @@ def sweep(result_path: Path) -> None:
     for comb in combs:
         output_path = result_path / str(time.time())
         cfg = Config(output_path=output_path, **comb)
+        print(cfg)
         main(cfg)
 
 
 if __name__ == "__main__":
-    sweep(Path("results"))
-    # main(Config())
+    # sweep(Path("results"))
+    main(Config())

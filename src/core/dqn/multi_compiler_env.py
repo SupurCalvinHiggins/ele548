@@ -6,6 +6,7 @@ with catch_warnings():
     from compiler_gym.envs import CompilerEnv
     from compiler_gym.wrappers import (
         RandomOrderBenchmarks,
+        CycleOverBenchmarks,
     )
 
 
@@ -33,12 +34,15 @@ class MultiCompilerEnv:
         envs = [env] + [env.fork() for _ in range(self.num_envs - 1)]
 
         def configure_env(env: CompilerEnv) -> CompilerEnv:
-            env = RandomOrderBenchmarks(env, env.datasets[self.dataset])
+            # env = RandomOrderBenchmarks(env, env.datasets[self.dataset])
+            # env = CycleOverBenchmarks(env, env.datasets[self.dataset])
             env.observation_space = self.observation_space
             env.reward_space = self.reward_space
             return env
 
         self.envs = [configure_env(env) for env in envs]
+        self.random_state = [np.random.default_rng(i) for i in range(self.num_envs)]
+        self.reset()
         return self
 
     def __exit__(self, type, value, exc_traceback) -> None:
@@ -91,18 +95,19 @@ class MultiCompilerEnv:
 
         actions = actions.cpu()
 
-        next_observations, rewards, _, _ = zip(
+        next_observations, rewards, dones, _ = zip(
             *[env.step(action.item()) for env, action in zip(self.envs, actions)]
         )
 
         next_observations = self.convert_observations(next_observations)
         rewards = self.convert_reward(rewards)
-        uris = (env.benchmark.uri for env in self.envs)
+        uris = tuple(env.benchmark.uri for env in self.envs)
 
-        return next_observations, rewards, uris
+        return next_observations, rewards, dones, uris 
 
     def reset(self) -> Tensor:
-        observations = [env.reset() for env in self.envs]
+        observations = [env.reset(env.datasets[self.dataset].random_benchmark(rs))
+ for rs, env in zip(self.random_state, self.envs)]
         return self.convert_observations(observations)
 
     def sample_actions(self) -> Tensor:
