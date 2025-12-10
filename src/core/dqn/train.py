@@ -147,12 +147,15 @@ def train(state: State, cfg: Config, logger: Logger) -> None:
         torch.save(state.model, cfg.output_path / "model.pt")
 
 
-def main(cfg: Config) -> None:
+def main(cfg: Config, start: Path = None) -> None:
     with MultiCompilerEnv(cfg.envs, cfg.observation_space, cfg.reward_space, cfg.cost, cfg.baseline_cost, cfg.steps_per_episode, cfg.dataset) as env:
         n_observations = env.n_observations
         n_actions = env.n_actions
         
-        model = DQN(n_observations, n_actions, cfg.hidden_size, cfg.use_autoencoder).to(device)
+        if start is not None:
+            model = DQN(n_observations, n_actions, cfg.hidden_size, cfg.use_autoencoder).to(device)
+        else:
+            model = torch.load(start).to(device)
         opt = optim.AdamW(model.policy.parameters(), lr=cfg.lr, amsgrad=True)
         
         memory = Memory(capacity=cfg.memory_capacity, observation_shape=(n_observations,)).to(
@@ -215,4 +218,4 @@ def sweep(result_path: Path) -> None:
 
 if __name__ == "__main__":
     # sweep(Path("results"))
-    main(Config())
+    main(Config(), start=Path("results/checkpoint2/model.pt"))

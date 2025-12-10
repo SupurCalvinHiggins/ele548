@@ -20,14 +20,14 @@ class Config:
     
     dataset: str = "benchmark://anghabench-v1" # "benchmark://chstone-v0"
     use_binary_reward: bool = False
-    steps_per_episode: int = 64
+    steps_per_episode: int = 256
 
     # Model parameters.
     hidden_size: int = 512
     use_autoencoder: bool = True
     
     # Training parameters.
-    episodes: int = 16 * 1024
+    episodes: int = 512 * 1024
     envs: int = 32
     batchs_per_episode: int = 64
     batch_size: int = 128
@@ -37,8 +37,8 @@ class Config:
     lr: float = 5e-5
 
     # Memory parameters.
-    memory_capacity: int = 8 * 1024
-    memory_capacity_min: int = 4 * 1024
+    memory_capacity: int = 256 * 1024
+    memory_capacity_min: int = 256 * 1024
 
     # Gradient clipping.
     gradient_norm_max: float = 10.0
