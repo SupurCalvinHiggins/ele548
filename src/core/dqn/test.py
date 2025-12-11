@@ -133,7 +133,7 @@ def evaluate_all(results_path: Path, dataset_uris: List[str], max_steps: int) ->
 
 if __name__ == "__main__":
     evaluate_all(
-        Path("results"), 
+        Path("results-256"), 
         [
             "benchmark://blas-v0",
             "benchmark://cbench-v1",
@@ -144,5 +144,5 @@ if __name__ == "__main__":
             "benchmark://opencv-v0",
             # "benchmark://tensorflow-v0"
         ],
-        64
+        256
     )

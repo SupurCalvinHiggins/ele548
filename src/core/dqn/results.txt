@@ -1,0 +1,227 @@
+best/worst auto
+0.8594517707824707
+0.6715975403785706
+
+best/worst no auto
+0.8620790243148804
+0.6000280976295471
+
+best/worst binary
+0.8423409461975098
+0.8178940415382385
+
+best/worst both
+0.8486154079437256
+0.7089552879333496
+
+curriculumn
+0.7709046006202698
+
+no curriculumn
+0.8940064311027527
+
+
+results/1765304373.8486314
+auto
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9636346697807312 0.7620967626571655 1.0047999620437622
+benchmark://cbench-v1 0.819373607635498 0.47302907705307007 1.1037527322769165
+benchmark://chstone-v0 0.8357740640640259 0.43282049894332886 1.0580503940582275
+benchmark://mibench-v1 0.7950378656387329 0.5511810779571533 1.4075829982757568
+benchmark://npb-v0 0.781687319278717 0.25561395287513733 1.6766917705535889
+benchmark://opencv-v0 0.9768523573875427 0.785714328289032 1.5641241073608398
+0.8585959672927856
+
+results/1765306448.267953
+auto
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9483281373977661 0.7070707082748413 1.0040080547332764
+benchmark://cbench-v1 0.8128371834754944 0.47874999046325684 1.2722645998001099
+benchmark://chstone-v0 0.9017123579978943 0.6638823747634888 1.1285046339035034
+benchmark://mibench-v1 0.8080066442489624 0.5560619831085205 1.1511627435684204
+benchmark://npb-v0 0.7341681122779846 0.24872753024101257 1.8031914234161377
+benchmark://opencv-v0 0.9774361252784729 0.785714328289032 1.54983389377594
+0.8594517707824707
+
+results/1765307134.2061896
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9490886926651001 0.7526881694793701 1.0080256462097168
+benchmark://cbench-v1 0.8021864891052246 0.4710743725299835 1.3513513803482056
+benchmark://chstone-v0 0.8846822381019592 0.6638823747634888 1.0580503940582275
+benchmark://mibench-v1 0.7323024272918701 0.35877862572669983 1.4924622774124146
+benchmark://npb-v0 0.7607588768005371 0.24872753024101257 1.9482758045196533
+benchmark://opencv-v0 0.9776303768157959 0.785714328289032 1.54983389377594
+0.8460842370986938
+
+results/1765300764.3567963
+auto, binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9429186582565308 0.7070707082748413 1.0039761066436768
+benchmark://cbench-v1 0.6851718425750732 0.40269750356674194 1.1209964752197266
+benchmark://chstone-v0 0.6934471130371094 0.4367149770259857 0.9723502397537231
+benchmark://mibench-v1 0.7519938349723816 0.3100775182247162 1.2073169946670532
+benchmark://npb-v0 0.5754952430725098 0.23814165592193604 1.644444465637207
+benchmark://opencv-v0 0.9802930355072021 0.785714328289032 1.54983389377594
+0.7582571506500244
+
+results/1765303242.6982162
+binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9400550127029419 0.7709359526634216 1.0
+benchmark://cbench-v1 0.8336735963821411 0.37931033968925476 1.09375
+benchmark://chstone-v0 0.9207557439804077 0.7406955361366272 1.1555023193359375
+benchmark://mibench-v1 0.6237127780914307 0.3095238208770752 1.3083699941635132
+benchmark://npb-v0 0.7398528456687927 0.29004940390586853 2.086315631866455
+benchmark://opencv-v0 0.9757052659988403 0.785714328289032 1.54983389377594
+0.829132080078125
+
+results/1765301437.734498
+auto, binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9351598024368286 0.7070707082748413 1.0
+benchmark://cbench-v1 0.7701089382171631 0.4158174693584442 1.2787723541259766
+benchmark://chstone-v0 0.7653827667236328 0.4889791011810303 1.0365058183670044
+benchmark://mibench-v1 0.569462239742279 0.27835050225257874 1.4924622774124146
+benchmark://npb-v0 0.5479421615600586 0.19113430380821228 1.5201793909072876
+benchmark://opencv-v0 0.9779736995697021 0.785714328289032 1.5962361097335815
+0.7429745197296143
+
+results/final-partial-64
+auto
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": true, "episodes": 16384, "envs": 32, "batchs_per_episode": 64, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9515001773834229 0.7070707082748413 1.0080256462097168
+benchmark://cbench-v1 0.8556526899337769 0.5811836123466492 1.1037527322769165
+benchmark://chstone-v0 0.8768643736839294 0.6638823747634888 1.0580503940582275
+benchmark://mibench-v1 0.8336760401725769 0.6057347655296326 1.3499999046325684
+benchmark://npb-v0 0.7843362092971802 0.24872753024101257 1.8938547372817993
+benchmark://opencv-v0 0.9769049882888794 0.785714328289032 1.54983389377594
+0.8773343563079834
+
+results/1765303807.7145498
+binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9349765181541443 0.7070707082748413 1.0
+benchmark://cbench-v1 0.8392863869667053 0.4750000238418579 1.2722645998001099
+benchmark://chstone-v0 0.8717688322067261 0.5706490874290466 1.14454984664917
+benchmark://mibench-v1 0.748784065246582 0.32335329055786133 1.1292775869369507
+benchmark://npb-v0 0.7140399813652039 0.2779220640659332 1.7011494636535645
+benchmark://opencv-v0 0.9766435623168945 0.785714328289032 1.54983389377594
+0.8423409461975098
+
+results/1765308889.0682623
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9416154623031616 0.7070707082748413 1.0060361623764038
+benchmark://cbench-v1 0.8463180065155029 0.4986979365348816 1.133786916732788
+benchmark://chstone-v0 0.8677213191986084 0.6638823747634888 1.0674846172332764
+benchmark://mibench-v1 0.7981717586517334 0.5560619831085205 1.1511627435684204
+benchmark://npb-v0 0.7359691858291626 0.24872753024101257 1.9482758045196533
+benchmark://opencv-v0 0.9806187748908997 0.785714328289032 1.54983389377594
+0.8577761054039001
+
+results/final-64-256
+auto
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 256, "hidden_size": 512, "use_autoencoder": true, "episodes": 524288, "envs": 32, "batchs_per_episode": 64, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 262144, "memory_capacity_min": 262144, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9417634606361389 0.7186311483383179 1.0040568113327026
+benchmark://cbench-v1 0.7391942143440247 0.5099866390228271 1.0227272510528564
+benchmark://chstone-v0 0.6876816749572754 0.40866509079933167 0.9797160029411316
+benchmark://mibench-v1 0.7423762679100037 0.27835050225257874 1.3499999046325684
+benchmark://npb-v0 0.6041613221168518 0.19113430380821228 1.355742335319519
+benchmark://opencv-v0 0.9775500297546387 0.785714328289032 1.54983389377594
+0.7709046006202698
+
+results/1765302678.6162033
+binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9421336650848389 0.7070707082748413 1.0
+benchmark://cbench-v1 0.8512112498283386 0.4466955065727234 1.09375
+benchmark://chstone-v0 0.8695148825645447 0.490859717130661 1.109070062637329
+benchmark://mibench-v1 0.6564133763313293 0.29729729890823364 1.375
+benchmark://npb-v0 0.6700783371925354 0.19113430380821228 2.029149055480957
+benchmark://opencv-v0 0.9760055541992188 0.785714328289032 1.54983389377594
+0.8178940415382385
+
+results/1765307713.4403064
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9356521368026733 0.7070707082748413 1.0
+benchmark://cbench-v1 0.8292837738990784 0.5829527974128723 1.25
+benchmark://chstone-v0 0.8635040521621704 0.6638823747634888 1.0580503940582275
+benchmark://mibench-v1 0.8394790291786194 0.5560619831085205 1.1511627435684204
+benchmark://npb-v0 0.746659517288208 0.24872753024101257 1.8031914234161377
+benchmark://opencv-v0 0.977390468120575 0.785714328289032 1.54983389377594
+0.8620790243148804
+
+results/1765305759.537365
+auto
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9357152581214905 0.7070707082748413 1.0040568113327026
+benchmark://cbench-v1 0.5898847579956055 0.29875195026397705 0.8591065406799316
+benchmark://chstone-v0 0.6311203241348267 0.41513514518737793 0.7979919910430908
+benchmark://mibench-v1 0.4210001826286316 0.27835050225257874 1.0959409475326538
+benchmark://npb-v0 0.6415030360221863 0.29004940390586853 1.4530792236328125
+benchmark://opencv-v0 0.9753277897834778 0.785714328289032 1.54983389377594
+0.6715975403785706
+
+results/1765305045.470912
+auto
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.935034990310669 0.7070707082748413 1.0
+benchmark://cbench-v1 0.8269020318984985 0.47874999046325684 1.1655012369155884
+benchmark://chstone-v0 0.9093356728553772 0.6690235137939453 1.1472684144973755
+benchmark://mibench-v1 0.788373589515686 0.5581395626068115 1.1511627435684204
+benchmark://npb-v0 0.7262673377990723 0.19113430380821228 1.9482758045196533
+benchmark://opencv-v0 0.9816106557846069 0.785714328289032 1.54983389377594
+0.8566346764564514
+
+results/1765302112.4442856
+binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9342994093894958 0.7070707082748413 1.0030136108398438
+benchmark://cbench-v1 0.8310850262641907 0.472578763961792 1.2722645998001099
+benchmark://chstone-v0 0.8381136655807495 0.5420560836791992 1.180929183959961
+benchmark://mibench-v1 0.7279305458068848 0.3350083827972412 1.375
+benchmark://npb-v0 0.6434256434440613 0.24241425096988678 1.4102563858032227
+benchmark://opencv-v0 0.9753031730651855 0.785714328289032 1.54983389377594
+0.8169467449188232
+
+results/1765298880.286747
+auto, binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9688629508018494 0.7526881694793701 1.0080256462097168
+benchmark://cbench-v1 0.7923798561096191 0.47874999046325684 1.029411792755127
+benchmark://chstone-v0 0.8895803689956665 0.6610455513000488 1.1372549533843994
+benchmark://mibench-v1 0.7667317986488342 0.3085714280605316 1.169291377067566
+benchmark://npb-v0 0.7290244698524475 0.29066479206085205 1.8974359035491943
+benchmark://opencv-v0 0.9783604741096497 0.785714328289032 1.54983389377594
+0.8486154079437256
+
+results/final-64
+auto
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": true, "episodes": 16384, "envs": 32, "batchs_per_episode": 64, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.95102858543396 0.7526881694793701 1.0
+benchmark://cbench-v1 0.8832910060882568 0.5910493731498718 1.1111111640930176
+benchmark://chstone-v0 0.9406965374946594 0.8258064985275269 1.0580503940582275
+benchmark://mibench-v1 0.7458797693252563 0.35877862572669983 1.3499999046325684
+benchmark://npb-v0 0.8848357200622559 0.381958544254303 1.7174692153930664
+benchmark://opencv-v0 0.9789613485336304 0.785714328289032 1.54983389377594
+0.8940064311027527
+
+results/1765308300.7962549
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": false, "steps_per_episode": 64, "hidden_size": 512, "use_autoencoder": false, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 0.0005, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9339153170585632 0.7070707082748413 1.0
+benchmark://cbench-v1 0.5022873282432556 0.29875195026397705 0.8091848492622375
+benchmark://chstone-v0 0.4996778964996338 0.40166205167770386 0.769328236579895
+benchmark://mibench-v1 0.3894073963165283 0.27835050225257874 0.7595908045768738
+benchmark://npb-v0 0.5240886211395264 0.19113430380821228 1.121212124824524
+benchmark://opencv-v0 0.9755972623825073 0.785714328289032 1.54983389377594
+0.6000280976295471
+
+results/1765300093.1751852
+auto, binary
+{"epsilon_greedy_start": 0.9, "epsilon_greedy_end": 0.01, "epsilon_greedy_duration": 32768, "observation_space": "Autophase", "reward_space": "IrInstructionCount", "cost": "IrInstructionCount", "baseline_cost": "IrInstructionCountOz", "dataset": "benchmark://anghabench-v1", "use_binary_reward": true, "steps_per_episode": 64, "hidden_size": 256, "use_autoencoder": true, "episodes": 1024, "envs": 32, "batchs_per_episode": 32, "batch_size": 128, "gamma": 0.99, "lr": 5e-05, "memory_capacity": 8192, "memory_capacity_min": 4096, "gradient_norm_max": 10.0, "tau": 0.001}
+benchmark://blas-v0 0.9354258179664612 0.7070707082748413 1.0
+benchmark://cbench-v1 0.6308916211128235 0.46444445848464966 1.1013985872268677
+benchmark://chstone-v0 0.7760465145111084 0.490859717130661 0.99294114112854
+benchmark://mibench-v1 0.5078245401382446 0.29729729890823364 1.1647059917449951
+benchmark://npb-v0 0.5586679577827454 0.1912340372800827 1.1746032238006592
+benchmark://opencv-v0 0.97722327709198 0.785714328289032 1.54983389377594
+0.7089552879333496

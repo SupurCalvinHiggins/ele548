@@ -1,0 +1,25 @@
+\frametitle{Example Zero Size Program}
+
+\begin{lstlisting}
+struct item_head { int dummy; };
+
+int IH_SIZE;
+int memcpy (
+    struct item_head *to,
+    const struct item_head *from,
+    int size
+);
+
+inline void copy_item_head(
+    struct item_head *to,
+    const struct item_head *from
+) {
+    memcpy(to, from, IH_SIZE);
+}
+\end{lstlisting}
+
+\begin{center}
+    \Large
+    \textcolor{red}{\textbf{Only inline function definitions and globals...}}
+\end{center}
+
