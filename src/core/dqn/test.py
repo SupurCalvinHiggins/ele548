@@ -126,7 +126,7 @@ def worker_fn(model_path: Path, dataset_uris: List[str], max_steps: int) -> None
 
 
 def evaluate_all(results_path: Path, dataset_uris: List[str], max_steps: int) -> None:
-    with mp.Pool(8) as pool:
+    with mp.Pool(4) as pool:
         pool.starmap(worker_fn, ((model_path, dataset_uris, max_steps) for model_path in  results_path.glob("**/*.pt")))
 
         
@@ -135,14 +135,14 @@ if __name__ == "__main__":
     evaluate_all(
         Path("results"), 
         [
-            # "benchmark://blas-v0",
+            "benchmark://blas-v0",
             "benchmark://cbench-v1",
-            # "benchmark://chstone-v0",
+            "benchmark://chstone-v0",
             # "benchmark://linux-v0",
-            # "benchmark://mibench-v1",
-            # "benchmark://npb-v0",
-            # "benchmark://opencv-v0",
+            "benchmark://mibench-v1",
+            "benchmark://npb-v0",
+            "benchmark://opencv-v0",
             # "benchmark://tensorflow-v0"
         ],
-        256
+        64
     )
