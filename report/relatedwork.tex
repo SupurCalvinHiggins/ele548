@@ -1,0 +1,125 @@
+\section{Related Work}
+
+\begin{table*}[t]
+    \caption{Summary of Prior Work}
+    \label{tab:prior_work}
+    \centering
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{
+        p{2.0cm}
+        p{2.0cm}
+        p{2.0cm}
+        p{2.0cm}
+        p{2.0cm}
+        p{2.0cm}
+        p{2.0cm}
+    }
+        \toprule
+        \textbf{Method} &
+        \textbf{Objectives} &
+        \textbf{Benchmarks} &
+        \textbf{Models} &
+        \textbf{Representation} &
+        \textbf{Rewards} &
+        \textbf{Results} \\
+
+        \midrule
+        AutoPhase~\cite{hajali2020}
+        & Cycle count
+        & High-Level Synthesis
+        & PPO, A3C, Random Forest
+        & AutoPhase features, action history
+        & $\log \frac{C(s_{t-1})}{C(s_{t})}$
+        & 1.28x speedup vs. \texttt{-O3} \\
+
+        \midrule
+        CORL~\cite{mammadli2020}
+        & Runtime
+        & LLVM test suite
+        & Deep Q-learning
+        & inst2vec, action history
+        & $\log \frac{C(s_{t-1})}{C(s_{t})}$
+        & Slowdown vs. \texttt{-O3} \\
+
+        \midrule
+        POSET-RL~\cite{jain2022}
+        & Throughput, binary size
+        & SPEC-CPU 2006, SPEC-CPU 2017, MiBench
+        & Deep Q-Learning
+        & IR2Vec
+        & Linear combination of $\frac{C(s_{t-1}) - C(s_{t})}{C(s_{\texttt{-O0}})}$ for throughput, binary size
+        & 1.04x throughput, 1.03x compression vs. \texttt{-Oz} \\
+
+        \midrule
+        AutoPhase V2~\cite{almakki2022}
+        & IR instruction count
+        & cBench, CHStone, Csmith
+        & PPO
+        & AutoPhase features, action history
+        & $\frac{C(s_{t}) - C(s_{t-1})}{C(s_{\texttt{-O0}}) - C(s_{\texttt{-Oz}})}$
+        & 1.00x compression vs. \texttt{-Oz} \\
+
+        \midrule
+        GEAN~\cite{liang2023}
+        & IR instruction count
+        & AnghaBench, BLAS, GitHub, Linux, OpenCV, POJ-104, TensorFlow, CLGen, Csmith, LLVM-Stress, cBench, CHStone, MiBench, NPB
+        & Coreset, GEAN (GAT-like GNN)
+        & ProGraML
+        & Minimum observed cost
+        & 1.05x compression vs. \texttt{-Oz} \\
+
+        \midrule
+        DeCOS~\cite{cui2025}
+        & Cycle count
+        & SPEC-CPU 2017
+        & Unspecified RL, LLM
+        & IR2Vec, dynamic features, action history
+        & $C(s_{t}) - C(s_{t-1})$, unspecified reward for final result
+        & 1.21x speedup vs. \texttt{OpenTuner} \\
+        
+        \midrule
+        CompilerDream~\cite{chaoyi2025}
+        & IR instruction count
+        & CodeContests, BLAS, cBench, CHStone, Linux, MiBench, NPB, OpenCV, TensorFlow
+        & DreamerV2, guided search
+        & AutoPhase features, action history
+        & $\frac{C(s_{t}) - C(s_{t-1})}{C(s_{\texttt{-O0}}) - C(s_{\texttt{-Oz}})}$
+        & 1.07x compression vs. \texttt{-Oz} \\
+        
+        \midrule
+        GRACE~\cite{pan2025grace}
+        & IR instruction count
+        & BLAS, cBench, CHStone, MiBench, NPB, OpenCV, TensorFlow
+        & Coreset, contrastive encoder, guided search
+        & AutoPhase features
+        & Minimum observed cost
+        & 1.10x compression vs. \texttt{-Oz} \\
+        
+        \midrule
+        Compiler-R1~\cite{pan2025r1}
+        & IR instruction count
+        & BLAS, cBench, CHStone, MiBench, NPB, OpenCV, TensorFlow
+        & LLM, GRPO, PPO, RPP
+        & AutoPhase features      
+        & $\frac{C(s_{\texttt{-O0}}) - C(s_{t})}{C(s_{\texttt{-O0}})}$, format reward
+        & 1.08x compression vs. \texttt{-Oz} \\
+
+        \bottomrule
+    \end{tabular}
+\end{table*}
+
+
+
+% include table organizing prior work with
+% objective
+% benchmark
+% model
+% program representation
+% results
+% year
+
+% identify key weaknesses of prior work:
+% program representation
+% efficiency (sample and otherwise)
+
+% compilergym framework
