@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.6)  15 DEC 2025 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.6)  15 DEC 2025 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -788,460 +788,449 @@ File: rl_phase_ordering.png Graphic file (type png)
 <use rl_phase_ordering.png>
 Package pdftex.def Info: rl_phase_ordering.png  used on input line 32.
 (pdftex.def)             Requested size: 233.06068pt x 116.71101pt.
-) (./relatedwork.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
-
-
- <./rl_phase_ordering.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+) (./relatedwork.tex
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 []\OT1/ptm/m/n/8 AutoPhase
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 \OT1/ptm/m/n/8 fea-tures, ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 []\OT1/ptm/m/n/8 1.28x speedup
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 []\OT1/ptm/m/n/8 inst2vec, ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 []\OT1/ptm/m/n/8 Slowdown vs.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 []\OT1/ptm/m/n/8 Throughput,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 []\OT1/ptm/m/n/8 SPEC-CPU
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 \OT1/ptm/m/n/8 2006, SPEC-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 \OT1/ptm/m/n/8 CPU 2017,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 []\OT1/ptm/m/n/8 Linear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \OT1/ptm/m/n/8 com-bi-na-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \OT1/ptm/m/n/8 for through-put,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 []\OT1/ptm/m/n/8 1.04x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 \OT1/ptm/m/n/8 through-put,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 \OT1/ptm/m/n/8 1.03x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+\OT1/ptm/m/n/8 com-pres-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+[]\OT1/ptm/m/n/8 AutoPhase
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\OT1/ptm/m/n/8 IR in-struc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+[]\OT1/ptm/m/n/8 cBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+[]\OT1/ptm/m/n/8 AutoPhase
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\OT1/ptm/m/n/8 fea-tures, ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+[]\OT1/ptm/m/n/8 1.00x
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
-[]\OT1/ptm/m/n/8 AutoPhase
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
 []\OT1/ptm/m/n/8 IR in-struc-tion
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+[]\OT1/ptm/m/n/8 AnghaBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 BLAS, GitHub,
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 Linux, OpenCV,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 POJ-104,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 Ten-sor-Flow,
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 CLGen, Csmith,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 LLVM-Stress,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 cBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+\OT1/ptm/m/n/8 CH-Stone,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
-[]\OT1/ptm/m/n/8 cBench,
+[]\OT1/ptm/m/n/8 Coreset, GEAN
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
-[]\OT1/ptm/m/n/8 AutoPhase
+[]\OT1/ptm/m/n/8 Minimum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\OT1/ptm/m/n/8 fea-tures, ac-tion
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+[]\OT1/ptm/m/n/8 1.05x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-[]\OT1/ptm/m/n/8 1.00x
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
-[]\OT1/ptm/m/n/8 IR in-struc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-[]\OT1/ptm/m/n/8 AnghaBench,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 BLAS, GitHub,
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 Linux, OpenCV,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 POJ-104,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 Ten-sor-Flow,
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 CLGen, Csmith,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 LLVM-Stress,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 cBench,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-\OT1/ptm/m/n/8 CH-Stone,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-[]\OT1/ptm/m/n/8 Coreset, GEAN
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-[]\OT1/ptm/m/n/8 Minimum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-[]\OT1/ptm/m/n/8 1.05x
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-\OT1/ptm/m/n/8 com-pres-sion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
 \OT1/ptm/m/n/8 3, SPEC-CPU
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 85--86
+Underfull \hbox (badness 2846) in paragraph at lines 75--76
 []\OT1/ptm/m/n/8 Unspecified RL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 \OT1/ptm/m/n/8 fea-tures, ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 []$\OML/cmm/m/it/8 C\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 \OML/cmm/m/it/8 C\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 )$\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 \OT1/ptm/m/n/8 un-spec-i-fied
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 87--88
+Underfull \hbox (badness 1424) in paragraph at lines 77--78
 \OT1/ptm/m/n/8 re-ward for fi-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 []\OT1/ptm/m/n/8 1.21x speedup
  []
 
 
-Overfull \hbox (6.25381pt too wide) in paragraph at lines 91--92
-[]\OT1/ptm/m/n/8 CompilerDream [9]| 
+Overfull \hbox (6.25381pt too wide) in paragraph at lines 81--82
+[]\OT1/ptm/m/n/8 CompilerDream [8]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 []\OT1/ptm/m/n/8 IR in-struc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 []\OT1/ptm/m/n/8 CodeContests,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 \OT1/ptm/m/n/8 BLAS, cBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 \OT1/ptm/m/n/8 MiBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 \OT1/ptm/m/n/8 NPB, OpenCV,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 []\OT1/ptm/m/n/8 DreamerV2,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 []\OT1/ptm/m/n/8 AutoPhase
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \OT1/ptm/m/n/8 fea-tures, ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 []\OT1/ptm/m/n/8 1.07x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 []\OT1/ptm/m/n/8 IR in-struc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 []\OT1/ptm/m/n/8 BLAS, cBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 \OT1/ptm/m/n/8 CH-Stone,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 \OT1/ptm/m/n/8 MiBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 \OT1/ptm/m/n/8 NPB, OpenCV,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 []\OT1/ptm/m/n/8 Coreset,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \OT1/ptm/m/n/8 con-trastive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \OT1/ptm/m/n/8 en-coder, guided
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 []\OT1/ptm/m/n/8 AutoPhase
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 []\OT1/ptm/m/n/8 Minimum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 []\OT1/ptm/m/n/8 1.10x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 []\OT1/ptm/m/n/8 Compiler-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 []\OT1/ptm/m/n/8 IR in-struc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 []\OT1/ptm/m/n/8 BLAS, cBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 \OT1/ptm/m/n/8 CH-Stone,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 \OT1/ptm/m/n/8 MiBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 \OT1/ptm/m/n/8 NPB, OpenCV,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 []\OT1/ptm/m/n/8 LLM, GRPO,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 []\OT1/ptm/m/n/8 AutoPhase
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 []$[]$\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 []\OT1/ptm/m/n/8 1.08x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
-) (./method.tex
-<dqn_rollout.png, id=20, 1130.2225pt x 819.06pt>
+) (./method.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+ <./rl_phase_ordering.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+<dqn_rollout.png, id=33, 1130.2225pt x 819.06pt>
 File: dqn_rollout.png Graphic file (type png)
 <use dqn_rollout.png>
 Package pdftex.def Info: dqn_rollout.png  used on input line 28.
 (pdftex.def)             Requested size: 203.43127pt x 147.42444pt.
-<dqn_replay.png, id=21, 1009.7725pt x 824.07875pt>
+<dqn_replay.png, id=34, 1009.7725pt x 824.07875pt>
 File: dqn_replay.png Graphic file (type png)
 <use dqn_replay.png>
 Package pdftex.def Info: dqn_replay.png  used on input line 39.
 (pdftex.def)             Requested size: 181.7512pt x 148.32777pt.
-<dqn_replay_autoencoder.png, id=22, 536.0025pt x 430.60875pt>
-File: dqn_replay_autoencoder.png Graphic file (type png)
-<use dqn_replay_autoencoder.png>
-Package pdftex.def Info: dqn_replay_autoencoder.png  used on input line 52.
-(pdftex.def)             Requested size: 192.96075pt x 155.01903pt.
 ) (./experiments.tex
-<in_sample_qsort.png, id=23, 462.528pt x 346.896pt>
+<in_sample_qsort.png, id=35, 462.528pt x 346.896pt>
 File: in_sample_qsort.png Graphic file (type png)
 <use in_sample_qsort.png>
-Package pdftex.def Info: in_sample_qsort.png  used on input line 12.
+Package pdftex.def Info: in_sample_qsort.png  used on input line 13.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<in_sample_tensorflow.png, id=24, 462.528pt x 346.896pt>
-File: in_sample_tensorflow.png Graphic file (type png)
-<use in_sample_tensorflow.png>
-Package pdftex.def Info: in_sample_tensorflow.png  used on input line 19.
-(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [2 <./dqn_rollout.png> <./dqn_replay.png>]
-Overfull \hbox (30.37958pt too wide) in paragraph at lines 82--83
- [][] 
- []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [3]
-Overfull \hbox (3.54726pt too wide) in paragraph at lines 192--192
+[3 <./dqn_rollout.png> <./dqn_replay.png> <./in_sample_qsort.png>]
+Overfull \hbox (3.54726pt too wide) in paragraph at lines 191--191
 []\OT1/ptm/m/n/8 1,041,333| 
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 192--193
+Underfull \hbox (badness 1540) in paragraph at lines 191--192
 []\OT1/ptm/m/n/8 C/C++ func-tions ex-tracted from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 []\OT1/ptm/m/n/8 C-based high-level syn-the-sis
  []
 
-) (./futurework.tex [4 <./dqn_replay_autoencoder.png> <./in_sample_qsort.png> <./in_sample_tensorflow.png>]) (./references.tex) [5]
+) (./futurework.tex) (./references.tex) [4]
 Underfull \hbox (badness 1365) in paragraph at lines 25--25
 []\OT1/ptm/m/n/10 Rahim Mam-madli, Ali Jan-nesari, and Fe-lix Wolf.
  []
@@ -1256,7 +1245,7 @@ Underfull \hbox (badness 2591) in paragraph at lines 25--25
 \OT1/ptm/m/it/10 cale Com-put-ing (HiPar)\OT1/ptm/m/n/10 . 2020. \OT1/ptm/m/sc/10 doi\OT1/ptm/m/n/10 : $10 . 1109 /
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []\OT1/ptm/m/n/10 Haolin Pan et al. \OT1/ptm/m/it/10 GRACE: Globally-Seeded
  []
@@ -1277,7 +1266,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (./report.aux)
+[6
+
+] (./report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1287,18 +1278,18 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32910 strings out of 474222
- 801933 string characters out of 5748733
- 1958975 words of memory out of 5000000
- 54675 multiletter control sequences out of 15000+600000
+ 32891 strings out of 474222
+ 801334 string characters out of 5748733
+ 1963975 words of memory out of 5000000
+ 54656 multiletter control sequences out of 15000+600000
  597849 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,19n,101p,819b,2267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,19n,101p,819b,2269s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (6 pages, 477718 bytes).
+Output written on report.pdf (6 pages, 400886 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
+ 141 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

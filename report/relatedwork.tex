@@ -1,16 +1,6 @@
 \section{Related Work}
 
-Over the past five years, program optimization via learning LLVM pass orders has been an active field of research. An extensive list of methods is provided in
-Table~\ref{tab:prior_work}. Sample efficiency has been of particular concern: recent approaches have tried better learning algorithms~\cite{chaoyi2025}, 
-coreset decompositions~\cite{liang2023, pan2025grace}, and integrating LLMs~\cite{cui2025, pan2025r1}. Comparatively, little work has been done on program 
-representation as AutoPhase features, handcrafted vectors of 56 features statically extracted from IR, remain 
-popular despite broader trends towards end-to-end deep learning~\cite{chaoyi2025, pan2025grace, pan2025r1}. Only GEAN~\cite{liang2023} has used a 
-reasonably modern IR representation, ProGraML~\cite{cummins2021}. Evaluations of recent, powerful model-based RL methods like DreamerV3~\cite{hafner2025} and 
-EfficientZero~\cite{ye2021} are also notably absent. With the introduction of CompilerGym~\cite{cummins2022}, a reinforcement learning for compiler optimization 
-framework, experiments have largely centralized around well-supported objectives (i.e. IR instruction count), program representations (i.e. AutoPhase features, 
-ProGraML) and benchmarks.
-
-\begin{table*}[t]
+\begin{table*}[t!]
     \caption{Summary of Prior Work}
     \label{tab:prior_work}
     \centering
@@ -117,3 +107,13 @@ ProGraML) and benchmarks.
         \bottomrule
     \end{tabular}
 \end{table*}
+
+Over the past five years, program optimization via learning LLVM pass orders has been an active field of research. An extensive list of methods is provided in
+Table~\ref{tab:prior_work}. Sample efficiency has been of particular concern: recent approaches have tried better learning algorithms~\cite{chaoyi2025}, 
+coreset decompositions~\cite{liang2023, pan2025grace}, and integrating LLMs~\cite{cui2025, pan2025r1}. Comparatively, little work has been done on program 
+representation as AutoPhase features, handcrafted vectors of 56 features statically extracted from IR, remain 
+popular despite broader trends towards end-to-end deep learning~\cite{chaoyi2025, pan2025grace, pan2025r1}. Only GEAN~\cite{liang2023} has used a 
+reasonably modern IR representation, ProGraML~\cite{cummins2021}. Evaluations of recent, powerful model-based RL methods like DreamerV3~\cite{hafner2025} and 
+EfficientZero~\cite{ye2021} are also notably absent. With the introduction of CompilerGym~\cite{cummins2022}, a reinforcement learning for compiler optimization 
+framework, experiments have largely centralized around well-supported objectives (i.e. IR instruction count), program representations (i.e. AutoPhase features, 
+ProGraML) and benchmarks.
