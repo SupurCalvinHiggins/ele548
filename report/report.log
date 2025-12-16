@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.6)  15 DEC 2025 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.6)  15 DEC 2025 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -489,26 +489,247 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count414
 \@lastruleclass=\count415
 \@thisrulewidth=\dimen187
+) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen188
+\pgfutil@tempdimb=\dimen189
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen190
+\pgf@y=\dimen191
+\pgf@xa=\dimen192
+\pgf@ya=\dimen193
+\pgf@xb=\dimen194
+\pgf@yb=\dimen195
+\pgf@xc=\dimen196
+\pgf@yc=\dimen197
+\pgf@xd=\dimen198
+\pgf@yd=\dimen199
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count416
+\c@pgf@countb=\count417
+\c@pgf@countc=\count418
+\c@pgf@countd=\count419
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count420
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-\@quotelevel=\count416
-\@quotereset=\count417
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count421
+\pgfsyssoftpath@bigbuffer@items=\count422
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen256
+\pgfmath@count=\count423
+\pgfmath@box=\box57
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count424
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen257
+\pgf@picmaxx=\dimen258
+\pgf@picminy=\dimen259
+\pgf@picmaxy=\dimen260
+\pgf@pathminx=\dimen261
+\pgf@pathmaxx=\dimen262
+\pgf@pathminy=\dimen263
+\pgf@pathmaxy=\dimen264
+\pgf@xx=\dimen265
+\pgf@xy=\dimen266
+\pgf@yx=\dimen267
+\pgf@yy=\dimen268
+\pgf@zx=\dimen269
+\pgf@zy=\dimen270
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen271
+\pgf@path@lasty=\dimen272
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen273
+\pgf@shorten@start@additional=\dimen274
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count425
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen275
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen276
+\pgf@pt@y=\dimen277
+\pgf@pt@temp=\dimen278
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen279
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen280
+\pgf@sys@shading@range@num=\count426
+\pgf@shadingcount=\count427
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box61
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box62
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen281
+\pgf@nodesepend=\dimen282
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen283
+\pgffor@skip=\dimen284
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count428
+\pgfplotmarksize=\dimen285
+)
+\tikz@lastx=\dimen286
+\tikz@lasty=\dimen287
+\tikz@lastxsaved=\dimen288
+\tikz@lastysaved=\dimen289
+\tikz@lastmovetox=\dimen290
+\tikz@lastmovetoy=\dimen291
+\tikzleveldistance=\dimen292
+\tikzsiblingdistance=\dimen293
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count429
+\tikznumberofchildren=\count430
+\tikznumberofcurrentchild=\count431
+\tikz@fig@count=\count432
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count433
+\pgfmatrixcurrentcolumn=\count434
+\pgf@matrix@numberofcolumns=\count435
+)
+\tikz@expandcount=\count436
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks36
+\t@pgfplots@tokb=\toks37
+\t@pgfplots@tokc=\toks38
+\pgfplots@tmpa=\dimen294
+\c@pgfplots@coordindex=\count437
+\c@pgfplots@scanlineindex=\count438
+ (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count439
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count440
+\t@pgfplotstable@a=\toks42
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count441
+ (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen295
+\pgfdecoratedremainingdistance=\dimen296
+\pgfdecoratedinputsegmentcompleteddistance=\dimen297
+\pgfdecoratedinputsegmentremainingdistance=\dimen298
+\pgf@decorate@distancetomove=\dimen299
+\pgf@decorate@repeatstate=\count442
+\pgfdecorationsegmentamplitude=\dimen300
+\pgfdecorationsegmentlength=\dimen301
+)
+\tikz@lib@dec@box=\box67
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count443
+\pgfplots@xmin@reg=\dimen302
+\pgfplots@xmax@reg=\dimen303
+\pgfplots@ymin@reg=\dimen304
+\pgfplots@ymax@reg=\dimen305
+\pgfplots@zmin@reg=\dimen306
+\pgfplots@zmax@reg=\dimen307
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+\@quotelevel=\count444
+\@quotereset=\count445
  (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 -- Lines per column: 56 (exact).
 Package biblatex Info: Trying to load language 'english'...
@@ -524,27 +745,32 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' found.
  (./report.bbl)
-Package biblatex Info: Reference section=0 on input line 15.
-Package biblatex Info: Reference segment=0 on input line 15.
+Package biblatex Info: Reference section=0 on input line 16.
+Package biblatex Info: Reference segment=0 on input line 16.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count418
-\scratchdimen=\dimen188
-\scratchbox=\box56
-\nofMPsegments=\count419
-\nofMParguments=\count420
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count421
-\MPscratchDim=\dimen189
-\MPnumerator=\count422
-\makeMPintoPDFobject=\count423
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count446
+\scratchdimen=\dimen308
+\scratchbox=\box68
+\nofMPsegments=\count447
+\nofMParguments=\count448
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count449
+\MPscratchDim=\dimen309
+\MPnumerator=\count450
+\makeMPintoPDFobject=\count451
+\everyMPtoPDFconversion=\toks44
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (./title.tex) (./abstract.tex
+))
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
+ on input line 16.
+
+(./title.tex) (./abstract.tex
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -556,405 +782,462 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) (./relatedwork.tex
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+)
+<rl_phase_ordering.png, id=4, 1294.8375pt x 648.4225pt>
+File: rl_phase_ordering.png Graphic file (type png)
+<use rl_phase_ordering.png>
+Package pdftex.def Info: rl_phase_ordering.png  used on input line 32.
+(pdftex.def)             Requested size: 233.06068pt x 116.71101pt.
+) (./relatedwork.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+ <./rl_phase_ordering.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 []\OT1/ptm/m/n/8 AutoPhase
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 \OT1/ptm/m/n/8 fea-tures, ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 []\OT1/ptm/m/n/8 1.28x speedup
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 []\OT1/ptm/m/n/8 inst2vec, ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 []\OT1/ptm/m/n/8 Slowdown vs.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 []\OT1/ptm/m/n/8 Throughput,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 []\OT1/ptm/m/n/8 SPEC-CPU
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 \OT1/ptm/m/n/8 2006, SPEC-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 \OT1/ptm/m/n/8 CPU 2017,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 []\OT1/ptm/m/n/8 Linear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 \OT1/ptm/m/n/8 com-bi-na-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 \OT1/ptm/m/n/8 for through-put,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 []\OT1/ptm/m/n/8 1.04x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 \OT1/ptm/m/n/8 through-put,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 \OT1/ptm/m/n/8 1.03x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-\OT1/ptm/m/n/8 com-pres-sion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-[]\OT1/ptm/m/n/8 AutoPhase
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-[]\OT1/ptm/m/n/8 IR in-struc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-[]\OT1/ptm/m/n/8 cBench,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-[]\OT1/ptm/m/n/8 AutoPhase
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-\OT1/ptm/m/n/8 fea-tures, ac-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-[]\OT1/ptm/m/n/8 1.00x
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
-[]\OT1/ptm/m/n/8 IR in-struc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-[]\OT1/ptm/m/n/8 AnghaBench,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 BLAS, GitHub,
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 Linux, OpenCV,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 POJ-104,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 Ten-sor-Flow,
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 CLGen, Csmith,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 LLVM-Stress,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 cBench,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\OT1/ptm/m/n/8 CH-Stone,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-[]\OT1/ptm/m/n/8 Coreset, GEAN
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-[]\OT1/ptm/m/n/8 Minimum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-[]\OT1/ptm/m/n/8 1.05x
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-\OT1/ptm/m/n/8 com-pres-sion
- []
-
-
-Underfull \hbox (badness 2846) in paragraph at lines 75--76
-[]\OT1/ptm/m/n/8 Unspecified RL,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-\OT1/ptm/m/n/8 fea-tures, ac-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-[]$\OML/cmm/m/it/8 C\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-\OML/cmm/m/it/8 C\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 )$\OT1/ptm/m/n/8 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-\OT1/ptm/m/n/8 un-spec-i-fied
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 77--78
-\OT1/ptm/m/n/8 re-ward for fi-nal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-[]\OT1/ptm/m/n/8 1.21x speedup
- []
-
-
-Overfull \hbox (6.25381pt too wide) in paragraph at lines 81--82
-[]\OT1/ptm/m/n/8 CompilerDream [3]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-[]\OT1/ptm/m/n/8 IR in-struc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-[]\OT1/ptm/m/n/8 CodeContests,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\OT1/ptm/m/n/8 BLAS, cBench,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\OT1/ptm/m/n/8 MiBench,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-\OT1/ptm/m/n/8 NPB, OpenCV,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-[]\OT1/ptm/m/n/8 DreamerV2,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
 []\OT1/ptm/m/n/8 AutoPhase
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+[]\OT1/ptm/m/n/8 IR in-struc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+[]\OT1/ptm/m/n/8 cBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+[]\OT1/ptm/m/n/8 AutoPhase
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\OT1/ptm/m/n/8 fea-tures, ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[]\OT1/ptm/m/n/8 1.00x
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\OT1/ptm/m/n/8 com-pres-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+[]\OT1/ptm/m/n/8 IR in-struc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+[]\OT1/ptm/m/n/8 AnghaBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 BLAS, GitHub,
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 Linux, OpenCV,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 POJ-104,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 Ten-sor-Flow,
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 CLGen, Csmith,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 LLVM-Stress,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 cBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/8 CH-Stone,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+[]\OT1/ptm/m/n/8 Coreset, GEAN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+[]\OT1/ptm/m/n/8 Minimum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+[]\OT1/ptm/m/n/8 1.05x
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+\OT1/ptm/m/n/8 com-pres-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\OT1/ptm/m/n/8 3, SPEC-CPU
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 85--86
+[]\OT1/ptm/m/n/8 Unspecified RL,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 \OT1/ptm/m/n/8 fea-tures, ac-tion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
-[]\OT1/ptm/m/n/8 1.07x
+[]$\OML/cmm/m/it/8 C\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
-\OT1/ptm/m/n/8 com-pres-sion
+\OML/cmm/m/it/8 C\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 )$\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+\OT1/ptm/m/n/8 un-spec-i-fied
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 87--88
+\OT1/ptm/m/n/8 re-ward for fi-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]\OT1/ptm/m/n/8 1.21x speedup
+ []
+
+
+Overfull \hbox (6.25381pt too wide) in paragraph at lines 91--92
+[]\OT1/ptm/m/n/8 CompilerDream [9]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 []\OT1/ptm/m/n/8 IR in-struc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-[]\OT1/ptm/m/n/8 BLAS, cBench,
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+[]\OT1/ptm/m/n/8 CodeContests,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-\OT1/ptm/m/n/8 CH-Stone,
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+\OT1/ptm/m/n/8 BLAS, cBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \OT1/ptm/m/n/8 MiBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 \OT1/ptm/m/n/8 NPB, OpenCV,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-[]\OT1/ptm/m/n/8 Coreset,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-\OT1/ptm/m/n/8 con-trastive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-\OT1/ptm/m/n/8 en-coder, guided
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 94--95
+[]\OT1/ptm/m/n/8 DreamerV2,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 []\OT1/ptm/m/n/8 AutoPhase
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
-[]\OT1/ptm/m/n/8 Minimum
+\OT1/ptm/m/n/8 fea-tures, ac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-[]\OT1/ptm/m/n/8 1.10x
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+[]\OT1/ptm/m/n/8 1.07x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-[]\OT1/ptm/m/n/8 Compiler-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 []\OT1/ptm/m/n/8 IR in-struc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 []\OT1/ptm/m/n/8 BLAS, cBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \OT1/ptm/m/n/8 CH-Stone,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \OT1/ptm/m/n/8 MiBench,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \OT1/ptm/m/n/8 NPB, OpenCV,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-[]\OT1/ptm/m/n/8 LLM, GRPO,
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+[]\OT1/ptm/m/n/8 Coreset,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
-[]\OT1/ptm/m/n/8 AutoPhase
+\OT1/ptm/m/n/8 con-trastive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+\OT1/ptm/m/n/8 en-coder, guided
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
+[]\OT1/ptm/m/n/8 AutoPhase
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+[]\OT1/ptm/m/n/8 Minimum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+[]\OT1/ptm/m/n/8 1.10x
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+\OT1/ptm/m/n/8 com-pres-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+[]\OT1/ptm/m/n/8 Compiler-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+[]\OT1/ptm/m/n/8 IR in-struc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+[]\OT1/ptm/m/n/8 BLAS, cBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+\OT1/ptm/m/n/8 CH-Stone,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+\OT1/ptm/m/n/8 MiBench,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+\OT1/ptm/m/n/8 NPB, OpenCV,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+[]\OT1/ptm/m/n/8 LLM, GRPO,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+[]\OT1/ptm/m/n/8 AutoPhase
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 []$[]$\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 []\OT1/ptm/m/n/8 1.08x
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 \OT1/ptm/m/n/8 com-pres-sion
  []
 
-) (./references.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+) (./method.tex
+<dqn_rollout.png, id=20, 1130.2225pt x 819.06pt>
+File: dqn_rollout.png Graphic file (type png)
+<use dqn_rollout.png>
+Package pdftex.def Info: dqn_rollout.png  used on input line 28.
+(pdftex.def)             Requested size: 203.43127pt x 147.42444pt.
+<dqn_replay.png, id=21, 1009.7725pt x 824.07875pt>
+File: dqn_replay.png Graphic file (type png)
+<use dqn_replay.png>
+Package pdftex.def Info: dqn_replay.png  used on input line 39.
+(pdftex.def)             Requested size: 181.7512pt x 148.32777pt.
+<dqn_replay_autoencoder.png, id=22, 536.0025pt x 430.60875pt>
+File: dqn_replay_autoencoder.png Graphic file (type png)
+<use dqn_replay_autoencoder.png>
+Package pdftex.def Info: dqn_replay_autoencoder.png  used on input line 52.
+(pdftex.def)             Requested size: 192.96075pt x 155.01903pt.
+) (./experiments.tex
+<in_sample_qsort.png, id=23, 462.528pt x 346.896pt>
+File: in_sample_qsort.png Graphic file (type png)
+<use in_sample_qsort.png>
+Package pdftex.def Info: in_sample_qsort.png  used on input line 12.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<in_sample_tensorflow.png, id=24, 462.528pt x 346.896pt>
+File: in_sample_tensorflow.png Graphic file (type png)
+<use in_sample_tensorflow.png>
+Package pdftex.def Info: in_sample_tensorflow.png  used on input line 19.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [2 <./dqn_rollout.png> <./dqn_replay.png>]
+
+LaTeX Warning: Reference `TODO' on page 3 undefined on input line 38.
 
 
-]
+Overfull \hbox (3.54726pt too wide) in paragraph at lines 136--136
+[]\OT1/ptm/m/n/8 1,041,333| 
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 136--137
+[]\OT1/ptm/m/n/8 C/C++ func-tions ex-tracted from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+[]\OT1/ptm/m/n/8 C-based high-level syn-the-sis
+ []
+
+) (./futurework.tex [3]) (./references.tex) [4 <./dqn_replay_autoencoder.png> <./in_sample_qsort.png> <./in_sample_tensorflow.png>]
 Underfull \hbox (badness 1365) in paragraph at lines 25--25
 []\OT1/ptm/m/n/10 Rahim Mam-madli, Ali Jan-nesari, and Fe-lix Wolf.
  []
@@ -969,7 +1252,7 @@ Underfull \hbox (badness 2591) in paragraph at lines 25--25
 \OT1/ptm/m/it/10 cale Com-put-ing (HiPar)\OT1/ptm/m/n/10 . 2020. \OT1/ptm/m/sc/10 doi\OT1/ptm/m/n/10 : $10 . 1109 /
  []
 
-[2]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []\OT1/ptm/m/n/10 Haolin Pan et al. \OT1/ptm/m/it/10 GRACE: Globally-Seeded
  []
@@ -990,30 +1273,34 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
+[6
 
 ] (./report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12289 strings out of 474222
- 225555 string characters out of 5748733
- 1951975 words of memory out of 5000000
- 34403 multiletter control sequences out of 15000+600000
- 597334 words of font info for 115 fonts, out of 8000000 for 9000
+ 32880 strings out of 474222
+ 801108 string characters out of 5748733
+ 1964975 words of memory out of 5000000
+ 54644 multiletter control sequences out of 15000+600000
+ 598956 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,16n,81p,735b,1551s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 183618 bytes).
+ 99i,19n,101p,819b,2288s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (6 pages, 474841 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 145 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

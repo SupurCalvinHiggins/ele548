@@ -1,5 +1,15 @@
 \section{Related Work}
 
+Over the past five years, program optimization via learning LLVM pass orders has been an active field of research. An extensive list of methods is provided in
+Table~\ref{tab:prior_work}. Sample efficiency has been of particular concern: recent approaches have tried better learning algorithms~\cite{chaoyi2025}, 
+coreset decompositions~\cite{liang2023, pan2025grace}, and integrating LLMs~\cite{cui2025, pan2025r1}. Comparatively, little work has been done on program 
+representation as AutoPhase features, handcrafted vectors of 56 features statically extracted from IR, remain 
+popular despite broader trends towards end-to-end deep learning~\cite{chaoyi2025, pan2025grace, pan2025r1}. Only GEAN~\cite{liang2023} has used a 
+reasonably modern IR representation, ProGraML~\cite{cummins2021}. Evaluations of recent, powerful model-based RL methods like DreamerV3~\cite{hafner2025} and 
+EfficientZero~\cite{ye2021} are also notably absent. With the introduction of CompilerGym~\cite{cummins2022}, a reinforcement learning for compiler optimization 
+framework, experiments have largely centralized around well-supported objectives (i.e. IR instruction count), program representations (i.e. AutoPhase features, 
+ProGraML) and benchmarks.
+
 \begin{table*}[t]
     \caption{Summary of Prior Work}
     \label{tab:prior_work}
@@ -47,7 +57,7 @@
         & SPEC-CPU 2006, SPEC-CPU 2017, MiBench
         & Deep Q-Learning
         & IR2Vec
-        & Linear combination of $\frac{C(s_{t-1}) - C(s_{t})}{C(s_{\texttt{-O0}})}$ for throughput, binary size
+        & Linear combination of $\frac{C(s_{t}) - C(s_{t-1})}{C(s_{\texttt{-O0}})}$ for throughput, binary size
         & 1.04x throughput, 1.03x compression vs. \texttt{-Oz} \\
 
         \midrule
@@ -71,7 +81,7 @@
         \midrule
         DeCOS~\cite{cui2025}
         & Cycle count
-        & SPEC-CPU 2017
+        & Splash-3, Parsec-3, SPEC-CPU 2017
         & Unspecified RL, LLM
         & IR2Vec, dynamic features, action history
         & $C(s_{t}) - C(s_{t-1})$, unspecified reward for final result
@@ -107,19 +117,3 @@
         \bottomrule
     \end{tabular}
 \end{table*}
-
-
-
-% include table organizing prior work with
-% objective
-% benchmark
-% model
-% program representation
-% results
-% year
-
-% identify key weaknesses of prior work:
-% program representation
-% efficiency (sample and otherwise)
-
-% compilergym framework

@@ -1,0 +1,23 @@
+\section{Future Work}
+
+\subsection{CompilerGym}
+
+We encountered numerous problems with the CompilerGym framework that should be fixed to support future research. In particular, the library version should 
+be bumped, race conditions caused by multiprocessing should be eliminated, compilation should be parallelized, and the performance of built-in program 
+representations such as inst2vec should be improved, 
+
+\subsection{Program Representation}
+
+End-to-end deep learning has yield incredibly successful IR-based program representations beyond handcrafted features like Autophase. Future work should 
+evaluate modern representations such as FAIR~\cite{niu2024} in the context of phase ordering.
+
+\subsection{Model}
+
+Instead of deep Q-learning, future work should investigate methods in the AlphaGo~\cite{silver2016} lineage such as AlphaZero~\cite{silver2018}, 
+MuZero~\cite{schrittwieser2020}, MuZero Reanalyze~\cite{schrittwieser2021} and EfficientZero~\cite{ye2021} which offer superior sample efficiency.
+
+\subsection{Objective}
+
+IR instruction count minimization is not a particularly useful objective. It serves primarily as a mechanism to disambiguate between different methods for 
+ordering optimization passes. However, the task might be saturated: most methods differ by less than a percentage point improvement over 
+\texttt{-Oz}. Future work should incorporate more relevant and underexplored objectives such as runtime and energy consumption.

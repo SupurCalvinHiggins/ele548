@@ -26,3 +26,10 @@ adapted DreamerV2~\cite{hafner2021}, a general purpose reinforcement learning me
 nearly all reinforcement learning methods across a diverse set of domains, they are notably overshadowed by EfficientZero~\cite{ye2021} in low sample regimes~\cite{hafner2025}. 
 Motivated by its sample efficiency, we aim to apply EfficientZero to the phase-ordering problem. In this work, we conduct preliminary experiments with deep
 Q-learning~\cite{mnih2015}, hoping to gain experience and insights before implementing EfficientZero.  
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.18]{rl_phase_ordering.png}
+    \caption{Reinforcement learning for the phase ordering problem. An agent (red) inspects the intermediate representation of a program (gray), selects and 
+    applies an optimization pass (yellow), and repeats to obtain an optimized program. Adapted from \cite{chaoyi2025}.}
+\end{figure}
