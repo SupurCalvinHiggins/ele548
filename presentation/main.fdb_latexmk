@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1765481693.20808 "main.bcf" "main.bbl" "main" 1765481700.6181 0
-  "main.bcf" 1765481700.55051 108669 b5da9f0d76395d32cfa7dabd0c6e9673 "pdflatex"
+["biber main"] 1765481693.20808 "main.bcf" "main.bbl" "main" 1765488675.18543 0
+  "main.bcf" 1765488675.11711 108669 b5da9f0d76395d32cfa7dabd0c6e9673 "pdflatex"
   "ref.bib" 1765481680.62624 12449 05d0d68bdaf7d48527eaf09560fb1fa0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1765481698.34946 "/home/calvin/Documents/uri/ele548/project/ele548/presentation/main.tex" "main.pdf" "main" 1765481700.61835 0
+["pdflatex"] 1765488672.94109 "/home/calvin/Documents/uri/ele548/project/ele548/presentation/main.tex" "main.pdf" "main" 1765488675.18567 0
   "/etc/texmf/web2c/texmf.cnf" 1765049274.95223 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/calvin/Documents/uri/ele548/project/ele548/presentation/main.tex" 1765481692.22964 12309 dfd99ac8c0308dd8d37deb20c33131b6 ""
+  "/home/calvin/Documents/uri/ele548/project/ele548/presentation/main.tex" 1765488672.78284 12434 2ec892079711b239094076dd4f58954e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -294,13 +294,13 @@
   "approach.png" 1763598846 35504 56ba91010ade8e891d58594084e7a2da ""
   "bug.png" 1763598846 71174 838016e6cff092b862c8f3fb74c6ce08 ""
   "compilergym.png" 1763598846 60618 c95fc4b927b89225414824b8785c82fc ""
-  "main.aux" 1765481700.54871 5404 ea04f5fc6d9336282ea32e71cacd9f39 "pdflatex"
+  "main.aux" 1765488675.11543 5404 ea04f5fc6d9336282ea32e71cacd9f39 "pdflatex"
   "main.bbl" 1765481693.76036 25073 b0e36e4c9052012e0cb3fa18be0ede0a "biber main"
-  "main.nav" 1765481700.55174 2377 52314a8c56557158b93672964c5cd48c "pdflatex"
-  "main.out" 1765481700.5499 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
-  "main.run.xml" 1765481700.55174 2298 9255f4d2cb39a5ffeeda22d5a40b248a "pdflatex"
-  "main.tex" 1765481692.22964 12309 dfd99ac8c0308dd8d37deb20c33131b6 ""
-  "main.vrb" 1765481699.81933 456 73a93fa0234f69690cec6d1502e867f1 "pdflatex"
+  "main.nav" 1765488675.11826 2377 52314a8c56557158b93672964c5cd48c "pdflatex"
+  "main.out" 1765488675.11652 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
+  "main.run.xml" 1765488675.11826 2298 9255f4d2cb39a5ffeeda22d5a40b248a "pdflatex"
+  "main.tex" 1765488672.78284 12434 2ec892079711b239094076dd4f58954e ""
+  "main.vrb" 1765488674.39442 456 73a93fa0234f69690cec6d1502e867f1 "pdflatex"
   "presentation-train.png" 1765480930.27634 31647 fa462cf8a84ee2b82102fa21b873573f ""
   "qsort_improvement_factor.png" 1763598846 49314 ffc7eeb0b38aff88141b89187ccc2fff ""
   "rollout.png" 1763598846 69199 2d5f1c4a32f9ce424bf32f641df04181 ""
