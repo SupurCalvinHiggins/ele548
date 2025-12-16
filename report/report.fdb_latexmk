@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber report"] 0 "report.bcf" "report.bbl" "report" 1765854770.51197 -1
+["biber report"] 1765855711.33232 "report.bcf" "report.bbl" "report" 1765855772.42014 0
   "ref.bib" 1765849997.78574 14483 c8eab627dc360e2bfae23f79521d1165 ""
-  "report.bcf" 1765854770.4432 110777 fc504e335bd842b220d5dfe331120266 "pdflatex"
+  "report.bcf" 1765855772.28699 110777 fc504e335bd842b220d5dfe331120266 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1765854769.2221 "/home/calvin/Documents/uri/ele548/project/ele548/report/report.tex" "report.pdf" "report" 1765854770.5122 0
+["pdflatex"] 1765855769.79975 "/home/calvin/Documents/uri/ele548/project/ele548/report/report.tex" "report.pdf" "report" 1765855772.42061 0
   "/etc/texmf/web2c/texmf.cnf" 1765049274.95223 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/calvin/Documents/uri/ele548/project/ele548/report/report.tex" 1765854066.15781 551 49da3028296b6da4e69c927ff0a1fa01 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -230,7 +230,7 @@
   "dqn_replay.png" 1765840887.26325 66466 5c6b37a1a7b72826bcca667c2275e1c7 ""
   "dqn_replay_autoencoder.png" 1765847540.02845 31499 827adb65db9c4a15c1d265788b3d4d8e ""
   "dqn_rollout.png" 1765840887.25735 69199 2d5f1c4a32f9ce424bf32f641df04181 ""
-  "experiments.tex" 1765854485.90934 4216 09689ad84b20b431f9c8f735a29067ce ""
+  "experiments.tex" 1765855766.9335 6942 75fcf11523f8d82899b1cbdd9dabf172 ""
   "futurework.tex" 1765849031.17407 1458 120dba727f4861eb475f9b31e8b64675 ""
   "in_sample_qsort.png" 1765852771.18308 49314 ffc7eeb0b38aff88141b89187ccc2fff ""
   "in_sample_tensorflow.png" 1765852771.19076 65627 c06d21fa00c4531c81d12f158696b33c ""
@@ -238,9 +238,9 @@
   "method.tex" 1765853273.8639 3631 3c65694c340c5ab9ca1b7738d53f6925 ""
   "references.tex" 1765828705.42287 18 e07434277585bc3696a7aac8bb5713d6 ""
   "relatedwork.tex" 1765845535.08953 4731 6f57bdcc41df8d9732bf5db7cf7f35cd ""
-  "report.aux" 1765854770.44185 8759 eda96a6e58e20f8a6df15d4932f656b1 "pdflatex"
-  "report.bbl" 1765852989.62151 65630 b3d142d26c1b7a4f8976fc63fe167087 "biber report"
-  "report.run.xml" 1765854770.44424 2312 e35c85b48157e3d63722e5da2208b456 "pdflatex"
+  "report.aux" 1765855772.28299 9468 4139a851e9ec367e63d858edb4ecc58d "pdflatex"
+  "report.bbl" 1765855712.56739 65630 b3d142d26c1b7a4f8976fc63fe167087 "biber report"
+  "report.run.xml" 1765855772.28895 2312 e35c85b48157e3d63722e5da2208b456 "pdflatex"
   "report.tex" 1765854066.15781 551 49da3028296b6da4e69c927ff0a1fa01 ""
   "rl_phase_ordering.png" 1765840505.25826 35504 56ba91010ade8e891d58594084e7a2da ""
   "title.tex" 1765822998.674 320 2f355713cc4c2d2ebe7255b2ac184b34 ""

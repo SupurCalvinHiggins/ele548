@@ -22,23 +22,78 @@ Figure~\ref{fig:in_sample_qsort} and Figure~\ref{fig:in_sample_tensorflow}, the 
 
 \subsection{Hyperparameter Sweep}
 
-TODO
+We conducted a hyperparameter sweep to determine the best combination of rewards and feature representation. See 
+Table~\ref{tab:hyperparameters} for combinations. All combinations used an initial epsilon-greedy probability of 90\% linearly decayed to 1\% over 32,768 steps, 
+were trained on the AnghaBench dataset, used 64 steps per episode for 1,024 episodes with a batch size of 128 and 32 batches per episode. The memory capacity was set at 8,192
+entries and filled to 50\% before training began. Detailed results are provided in Figure~\ref{fig:sweep}. Notably, signed rewards stabilized the training 
+procedure while the autoencoder did not.
 
-% hyperparameter table
-% training dataset
-% selection criteron
-% shitty graph
+\begin{table}[h!]
+    \label{tab:hyperparameters}
+    \caption{Hyperparameter Sweep}
+    \centering
+    \begin{tabular}{ll}
+    \toprule
+    \textbf{Hyperparameter} & \textbf{Value(s)} \\
+    \midrule
+    Signed Reward & Yes, No \\
+    Autoencoder & Yes, No \\
+    DQN Hidden Size & 256, 512 \\
+    Learning Rate & 0.0005, 0.00005 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{figure}
+    \centering
+    \label{fig:sweep}
+    \begin{tikzpicture}
+    \begin{axis}[
+        xmajorgrids,
+        xlabel={Mean Improvement Factor Versus \texttt{-Oz}},
+        ytick={1,2,3,4},
+        yticklabels={None, Autoencoder, Sign Rewards, Both},
+        width=9cm,
+        height=6cm,
+        xmin=0.5,
+        xmax=1,
+        ymin=0.5,
+        ymax=4.5,
+        enlarge y limits=0.15,
+        axis y line=left,
+        axis x line=bottom,
+    ]
+
+    \addplot+[thick, black, mark=none, line cap=round] coordinates { (0.600,1) (0.862,1) } node[right,pos=0.95] {}; 
+    \addplot+[thick, black, mark=none, line cap=round] coordinates { (0.671,2) (0.859,2) } node[right,pos=0.95] {};
+    \addplot+[thick, black, mark=none, line cap=round] coordinates { (0.817,3) (0.842,3) } node[right,pos=0.95] {};
+    \addplot+[thick, black, mark=none, line cap=round] coordinates { (0.708,4) (0.848,4) } node[right,pos=0.95] {};
+
+    \addplot+[
+        only marks,
+        mark=|,
+        mark size=6pt,
+        mark options={line width=2pt, solid, red}
+        ] coordinates { (0.600,1) (0.671,2) (0.817,3) (0.708,4) };
+    \addplot+[only marks, mark=|, mark size=6pt, mark options={line width=2pt, solid}, blue] coordinates { (0.862,1) (0.859,2) (0.842,3) (0.848,4) };
+
+    \end{axis}
+    \end{tikzpicture}
+    \caption{Geometric mean improvement factor versus \texttt{-Oz} across six benchmark suites. Blue (red) line is maximum (minimum) improvement factor in hyperparameter sweep.}
+\end{figure}
 
 \subsection{Final Model}
 
 We selected the hyperparameter combination with maximum speedup on the training set and trained it on AnghaBench for one day with 64 steps per episode. This
 combination used an autoencoder with the IR instruction count change reward. Due to time constraints, we could not wait for test metrics to become available. 
 We also attempted curriculum learning, training the final model for another day with 256 steps per episode. We evaluated both the final model and the final 
-model with curriculum learning at 64 and 256 steps for episode. Only the final model with 64 step per episode had reasonable performance. The results are 
-available in Figure~\ref{TODO}.
+model with curriculum learning at 64 and 256 steps for episode. Only the final model with 64 step per episode had reasonable performance, attaining 89\% of the
+IR instruction count reduction obtained by \texttt{-Oz}. The full results are available in Figure~\ref{fig:results}.
 
 \begin{figure*}
     \centering
+    \label{fig:results}
     \begin{tikzpicture}
     \begin{axis}[
         ybar,
@@ -114,7 +169,8 @@ available in Figure~\ref{TODO}.
 
     \end{axis}
     \end{tikzpicture}
-    \caption{}
+    \caption{DQN geometric mean IR instruction count reduction over \texttt{-Oz} on six representative benchmark suites. See Table~\ref{tab:datasets} for 
+    additional details.}
 \end{figure*}
 
 

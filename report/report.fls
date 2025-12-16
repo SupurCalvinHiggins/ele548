@@ -441,11 +441,6 @@ INPUT ./in_sample_tensorflow.png
 INPUT ./in_sample_tensorflow.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
-INPUT ./futurework.tex
-INPUT ./futurework.tex
-INPUT ./futurework.tex
-INPUT ./futurework.tex
-INPUT futurework.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
@@ -454,8 +449,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT ./futurework.tex
+INPUT ./futurework.tex
+INPUT ./futurework.tex
+INPUT ./futurework.tex
+INPUT futurework.tex
 INPUT ./references.tex
 INPUT ./references.tex
 INPUT ./references.tex
